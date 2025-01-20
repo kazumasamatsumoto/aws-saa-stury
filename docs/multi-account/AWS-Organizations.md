@@ -23,3 +23,15 @@
 ## Organization API
 
 ![Organization-API](/image/multi-account/organization-api.svg)
+
+## AWS Control Tower Core Services
+
+![AWSControlTowerCoreServices](/image/multi-account/landing-zone-core.svg)
+
+## Landing Zone
+
+![LandingZone](/image/multi-account/landing-zone-accounts.svg)
+
+## Landing Zone とは
+
+![AboutLandingZone](/image/multi-account/landing-zone-concept.svg)

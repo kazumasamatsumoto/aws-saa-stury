@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 900">
+    <!-- Background -->
+    <rect width="1000" height="900" fill="#1a2332"/>
+    
+    <!-- Title -->
+    <text x="50" y="50" font-family="Arial" font-size="32" font-weight="bold" fill="#ff9900">Landing Zone Account Types</text>
+    
+    <!-- Account Types -->
+    <g transform="translate(50,100)">
+        <!-- Management Account -->
+        <rect x="0" y="0" width="900" height="180" fill="#2a1b3d" stroke="#ff1b6b" stroke-width="3" rx="5"/>
+        <text x="30" y="45" font-family="Arial" font-size="26" fill="#ff1b6b">Management Account（管理アカウント）</text>
+        <text x="50" y="85" font-family="Arial" font-size="20" fill="#ffffff">目的と役割：</text>
+        <text x="70" y="120" font-family="Arial" font-size="20" fill="#ffffff">・AWS Control Tower のホスティングと管理</text>
+        <text x="70" y="155" font-family="Arial" font-size="20" fill="#ffffff">・組織全体のセキュリティとガバナンスの管理</text>
+
+        <!-- Log Archive Account -->
+        <rect x="0" y="200" width="900" height="180" fill="#2a1b3d" stroke="#4cc9f0" stroke-width="3" rx="5"/>
+        <text x="30" y="245" font-family="Arial" font-size="26" fill="#4cc9f0">Log Archive Account（ログアーカイブアカウント）</text>
+        <text x="50" y="285" font-family="Arial" font-size="20" fill="#ffffff">目的と役割：</text>
+        <text x="70" y="320" font-family="Arial" font-size="20" fill="#ffffff">・全アカウントのログを一元管理（CloudTrail, Config）</text>
+        <text x="70" y="355" font-family="Arial" font-size="20" fill="#ffffff">・監査とコンプライアンスのためのログ保持</text>
+
+        <!-- Audit Account -->
+        <rect x="0" y="400" width="900" height="180" fill="#2a1b3d" stroke="#8b5cf6" stroke-width="3" rx="5"/>
+        <text x="30" y="445" font-family="Arial" font-size="26" fill="#8b5cf6">Audit Account（監査アカウント）</text>
+        <text x="50" y="485" font-family="Arial" font-size="20" fill="#ffffff">目的と役割：</text>
+        <text x="70" y="520" font-family="Arial" font-size="20" fill="#ffffff">・セキュリティ監査の実施とコンプライアンスの監視</text>
+        <text x="70" y="555" font-family="Arial" font-size="20" fill="#ffffff">・セキュリティサービス（Security Hub, GuardDuty）の集中管理</text>
+
+        <!-- Provisioned Accounts -->
+        <rect x="0" y="600" width="900" height="180" fill="#2a1b3d" stroke="#10b981" stroke-width="3" rx="5"/>
+        <text x="30" y="645" font-family="Arial" font-size="26" fill="#10b981">Provisioned Accounts（プロビジョニングされたアカウント）</text>
+        <text x="50" y="685" font-family="Arial" font-size="20" fill="#ffffff">目的と役割：</text>
+        <text x="70" y="720" font-family="Arial" font-size="20" fill="#ffffff">・実際のワークロードを実行（開発、検証、本番環境）</text>
+        <text x="70" y="755" font-family="Arial" font-size="20" fill="#ffffff">・標準化されたベースライン設定の適用（セキュリティ、ネットワーク）</text>
+    </g>
+</svg>

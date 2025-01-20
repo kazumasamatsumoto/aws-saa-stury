@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 860">
+    <!-- Background -->
+    <rect width="1000" height="860" fill="#1a2332"/>
+    
+    <!-- Title -->
+    <text x="50" y="50" font-family="Arial" font-size="32" font-weight="bold" fill="#ff9900">AWS Landing Zone とは</text>
+    
+    <!-- Main Definition -->
+    <rect x="50" y="80" width="900" height="100" fill="#2a1b3d" stroke="#ff1b6b" stroke-width="3" rx="5"/>
+    <text x="70" y="130" font-family="Arial" font-size="22" fill="#ffffff">AWSのベストプラクティスに基づいて設計された、セキュアなマルチアカウント環境を</text>
+    <text x="70" y="160" font-family="Arial" font-size="22" fill="#ffffff">構築・運用するためのフレームワーク</text>
+
+    <!-- Key Features -->
+    <g transform="translate(50,200)">
+        <rect x="0" y="0" width="900" height="220" fill="#2a1b3d" stroke="#4cc9f0" stroke-width="3" rx="5"/>
+        <text x="30" y="45" font-family="Arial" font-size="26" fill="#4cc9f0">主な特徴</text>
+        
+        <text x="50" y="90" font-family="Arial" font-size="22" fill="#ffffff">1. 自動化されたセットアップ</text>
+        <text x="70" y="120" font-family="Arial" font-size="20" fill="#ffffff">・数クリックで複数アカウントの環境を自動構築</text>
+        
+        <text x="50" y="160" font-family="Arial" font-size="22" fill="#ffffff">2. ベストプラクティスの組み込み</text>
+        <text x="70" y="190" font-family="Arial" font-size="20" fill="#ffffff">・セキュリティ、ガバナンス、コンプライアンスの要件を標準装備</text>
+    </g>
+
+    <!-- Business Benefits -->
+    <g transform="translate(50,440)">
+        <rect x="0" y="0" width="900" height="360" fill="#2a1b3d" stroke="#10b981" stroke-width="3" rx="5"/>
+        <text x="30" y="45" font-family="Arial" font-size="26" fill="#10b981">実現できる価値</text>
+        
+        <text x="50" y="90" font-family="Arial" font-size="22" fill="#ffffff">1. セキュリティとコンプライアンス</text>
+        <text x="70" y="120" font-family="Arial" font-size="20" fill="#ffffff">・一貫したセキュリティ対策の適用</text>
+        <text x="70" y="150" font-family="Arial" font-size="20" fill="#ffffff">・監査やコンプライアンス要件への対応</text>
+        
+        <text x="50" y="190" font-family="Arial" font-size="22" fill="#ffffff">2. 運用効率の向上</text>
+        <text x="70" y="220" font-family="Arial" font-size="20" fill="#ffffff">・標準化された環境による管理の効率化</text>
+        <text x="70" y="250" font-family="Arial" font-size="20" fill="#ffffff">・自動化による運用負荷の削減</text>
+        
+        <text x="50" y="290" font-family="Arial" font-size="22" fill="#ffffff">3. スケーラビリティ</text>
+        <text x="70" y="320" font-family="Arial" font-size="20" fill="#ffffff">・ビジネスの成長に合わせた環境の拡張</text>
+    </g>
+</svg>

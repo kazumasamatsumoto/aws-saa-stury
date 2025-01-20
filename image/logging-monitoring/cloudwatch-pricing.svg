@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+    <!-- 背景 -->
+    <rect width="800" height="400" fill="#f8f9fa"/>
+    
+    <!-- タイトル -->
+    <text x="400" y="50" text-anchor="middle" font-size="24" font-weight="bold" fill="#232f3e">CloudWatch 料金体系</text>
+    
+    <!-- 料金要素 -->
+    <g transform="translate(200,100)">
+        <rect width="400" height="250" rx="10" fill="#E6F3FF"/>
+        <text x="200" y="40" text-anchor="middle" font-size="16" fill="#232f3e">主な料金要素</text>
+        
+        <!-- 料金項目 -->
+        <g transform="translate(50,80)">
+            <text x="0" y="0" font-size="14" fill="#666">・メトリクス収集・保存</text>
+            <text x="0" y="30" font-size="14" fill="#666">・アラーム</text>
+            <text x="0" y="60" font-size="14" fill="#666">・ログ収集・保存</text>
+            <text x="0" y="90" font-size="14" fill="#666">・API リクエスト</text>
+            <text x="0" y="120" font-size="14" fill="#666">・ダッシュボード</text>
+        </g>
+        
+        <!-- 注意事項 -->
+        <text x="200" y="220" text-anchor="middle" font-size="12" fill="#666">※ 無料利用枠あり</text>
+    </g>
+</svg> 

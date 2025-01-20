@@ -8,9 +8,7 @@
 
 ![CloudWatchが生まれた背景](/image/logging-monitoring/cloudwatch-background.svg)
 
-2. 次に、CloudWatch の利用手順を示す SVG を作成します：
-
-3. **利用手順**:
+2. **利用手順**:
 
 - 段階的な導入が可能で、各ステップが明確です
 - IAM ロールの設定から始まり、実際の監視設定まで順を追って進められます
@@ -18,12 +16,96 @@
 
 ![CloudWatch利用手順](/image/logging-monitoring/cloudwatch-setup.svg)
 
-3. 最後に、CloudWatch の仕組みを説明する SVG を作成します：
-
-4. **仕組み**:
+3. **仕組み**:
 
 - データ収集 → 処理・分析 → アクションの流れが明確です
 - 各段階で必要な機能が統合されています
 - 柔軟なカスタマイズと自動化が可能です
 
 ![CloudWatchの仕組み](/image/logging-monitoring/cloudwatch-architecture.svg)
+
+4. **主要コンポーネント**:
+
+## CloudWatch Metrics
+
+- システムメトリクスの収集と分析
+- カスタムメトリクスの作成が可能
+- 統計情報の表示（平均、最大、最小、合計、パーセンタイル）
+
+![CloudWatch Metrics](/image/logging-monitoring/cloudwatch-metrics.svg)
+
+## CloudWatch Logs
+
+- ログの一元管理とリアルタイム監視
+- ログの保持期間設定（1 日～ 10 年、または無制限）
+- ログパターンの検索とフィルタリング
+
+![CloudWatch Logs](/image/logging-monitoring/cloudwatch-logs.svg)
+
+## CloudWatch Alarms
+
+- メトリクスに基づくアラート設定
+- 複数条件の組み合わせが可能
+- SNS 通知や Auto Scaling などのアクションと連携
+
+![CloudWatch Alarms](/image/logging-monitoring/cloudwatch-alarms.svg)
+
+## CloudWatch Events/EventBridge
+
+- イベントベースの自動化
+- スケジュール実行
+- サービス間連携の orchestration
+
+![CloudWatch Events](/image/logging-monitoring/cloudwatch-events.svg)
+
+5. **ベストプラクティス**:
+
+![CloudWatch ベストプラクティス](/image/logging-monitoring/cloudwatch-best-practices.svg)
+
+## 監視設計
+
+- 必要なメトリクスの特定
+- アラートしきい値の適切な設定
+- ログ収集戦略の策定
+
+## コスト最適化
+
+- 必要なメトリクスのみ収集
+- 適切なログ保持期間の設定
+- 不要なアラームの削除
+
+## セキュリティ
+
+- IAM ロールによる適切なアクセス制御
+- 暗号化の有効化
+- 監査ログの有効化
+
+6. **SAA 試験のポイント**:
+
+![CloudWatch SAA試験ポイント](/image/logging-monitoring/cloudwatch-saa-points.svg)
+
+## 重要な概念
+
+- メトリクス名前空間
+- ディメンション
+- 統計期間
+- アラーム状態
+
+## 統合サービス
+
+- Auto Scaling
+- SNS
+- Lambda
+- Systems Manager
+
+## トラブルシューティング
+
+- メトリクス収集の問題
+- アラーム設定の問題
+- ログ収集の問題
+
+7. **料金体系**:
+
+![CloudWatch 料金体系](/image/logging-monitoring/cloudwatch-pricing.svg)
+
+- メトリクス収集・保存

@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+    <!-- 背景 -->
+    <rect width="800" height="400" fill="#f8f9fa"/>
+    
+    <!-- タイトル -->
+    <text x="400" y="50" text-anchor="middle" font-size="24" font-weight="bold" fill="#232f3e">CloudWatch Metrics</text>
+    
+    <!-- メトリクス収集の図 -->
+    <g transform="translate(50,100)">
+        <!-- EC2インスタンス -->
+        <rect width="150" height="80" rx="10" fill="#FF9900"/>
+        <text x="75" y="45" text-anchor="middle" fill="white">EC2 Instance</text>
+        
+        <!-- RDSインスタンス -->
+        <rect y="100" width="150" height="80" rx="10" fill="#527FFF"/>
+        <text x="75" y="145" text-anchor="middle" fill="white">RDS Instance</text>
+        
+        <!-- カスタムメトリクス -->
+        <rect y="200" width="150" height="80" rx="10" fill="#56C0A7"/>
+        <text x="75" y="245" text-anchor="middle" fill="white">Custom Metrics</text>
+    </g>
+    
+    <!-- 矢印 -->
+    <g transform="translate(220,140)">
+        <path d="M0,0 L100,0" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+        <path d="M0,60 L100,60" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+        <path d="M0,120 L100,120" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+    </g>
+    
+    <!-- メトリクス処理 -->
+    <g transform="translate(350,100)">
+        <rect width="200" height="200" rx="10" fill="#E6F3FF"/>
+        <text x="100" y="40" text-anchor="middle" font-size="16" fill="#232f3e">メトリクス処理</text>
+        <text x="100" y="80" text-anchor="middle" font-size="14" fill="#666">・データポイント収集</text>
+        <text x="100" y="110" text-anchor="middle" font-size="14" fill="#666">・統計情報計算</text>
+        <text x="100" y="140" text-anchor="middle" font-size="14" fill="#666">・時系列分析</text>
+    </g>
+    
+    <!-- 矢印 -->
+    <path d="M 550,200 L 600,200" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+    
+    <!-- 可視化 -->
+    <g transform="translate(600,100)">
+        <rect width="150" height="200" rx="10" fill="#CCE5FF"/>
+        <text x="75" y="40" text-anchor="middle" font-size="16" fill="#232f3e">可視化</text>
+        <text x="75" y="80" text-anchor="middle" font-size="14" fill="#666">・グラフ</text>
+        <text x="75" y="110" text-anchor="middle" font-size="14" fill="#666">・ダッシュボード</text>
+        <text x="75" y="140" text-anchor="middle" font-size="14" fill="#666">・アラート</text>
+    </g>
+    
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+        </marker>
+    </defs>
+</svg> 

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+    <!-- 背景 -->
+    <rect width="800" height="400" fill="#f8f9fa"/>
+    
+    <!-- タイトル -->
+    <text x="400" y="50" text-anchor="middle" font-size="24" font-weight="bold" fill="#232f3e">CloudWatch Events/EventBridge</text>
+    
+    <!-- イベントソース -->
+    <g transform="translate(50,100)">
+        <rect width="200" height="200" rx="10" fill="#E6F3FF"/>
+        <text x="100" y="40" text-anchor="middle" font-size="16" fill="#232f3e">イベントソース</text>
+        <text x="100" y="80" text-anchor="middle" font-size="14" fill="#666">・AWSサービス</text>
+        <text x="100" y="110" text-anchor="middle" font-size="14" fill="#666">・スケジュール</text>
+        <text x="100" y="140" text-anchor="middle" font-size="14" fill="#666">・カスタムイベント</text>
+    </g>
+    
+    <!-- 矢印 -->
+    <path d="M 250,200 L 300,200" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+    
+    <!-- ルール -->
+    <g transform="translate(300,100)">
+        <rect width="200" height="200" rx="10" fill="#CCE5FF"/>
+        <text x="100" y="40" text-anchor="middle" font-size="16" fill="#232f3e">ルール</text>
+        <text x="100" y="80" text-anchor="middle" font-size="14" fill="#666">・パターンマッチング</text>
+        <text x="100" y="110" text-anchor="middle" font-size="14" fill="#666">・イベントフィルタ</text>
+        <text x="100" y="140" text-anchor="middle" font-size="14" fill="#666">・ターゲット指定</text>
+    </g>
+    
+    <!-- 矢印 -->
+    <path d="M 500,200 L 550,200" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+    
+    <!-- ターゲット -->
+    <g transform="translate(550,100)">
+        <rect width="200" height="200" rx="10" fill="#B3D7FF"/>
+        <text x="100" y="40" text-anchor="middle" font-size="16" fill="#232f3e">ターゲット</text>
+        <text x="100" y="80" text-anchor="middle" font-size="14" fill="#666">・Lambda関数</text>
+        <text x="100" y="110" text-anchor="middle" font-size="14" fill="#666">・SNSトピック</text>
+        <text x="100" y="140" text-anchor="middle" font-size="14" fill="#666">・Step Functions</text>
+    </g>
+    
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+        </marker>
+    </defs>
+</svg> 

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+    <!-- 背景 -->
+    <rect width="800" height="400" fill="#f8f9fa"/>
+    
+    <!-- タイトル -->
+    <text x="400" y="50" text-anchor="middle" font-size="24" font-weight="bold" fill="#232f3e">CloudWatch SAA試験ポイント</text>
+    
+    <!-- 重要な概念 -->
+    <g transform="translate(50,100)">
+        <rect width="200" height="200" rx="10" fill="#E6F3FF"/>
+        <text x="100" y="40" text-anchor="middle" font-size="16" fill="#232f3e">重要な概念</text>
+        <text x="100" y="80" text-anchor="middle" font-size="14" fill="#666">・メトリクス名前空間</text>
+        <text x="100" y="110" text-anchor="middle" font-size="14" fill="#666">・ディメンション</text>
+        <text x="100" y="140" text-anchor="middle" font-size="14" fill="#666">・統計期間</text>
+    </g>
+    
+    <!-- 統合サービス -->
+    <g transform="translate(300,100)">
+        <rect width="200" height="200" rx="10" fill="#CCE5FF"/>
+        <text x="100" y="40" text-anchor="middle" font-size="16" fill="#232f3e">統合サービス</text>
+        <text x="100" y="80" text-anchor="middle" font-size="14" fill="#666">・Auto Scaling</text>
+        <text x="100" y="110" text-anchor="middle" font-size="14" fill="#666">・SNS/Lambda</text>
+        <text x="100" y="140" text-anchor="middle" font-size="14" fill="#666">・Systems Manager</text>
+    </g>
+    
+    <!-- トラブルシューティング -->
+    <g transform="translate(550,100)">
+        <rect width="200" height="200" rx="10" fill="#B3D7FF"/>
+        <text x="100" y="40" text-anchor="middle" font-size="16" fill="#232f3e">トラブルシューティング</text>
+        <text x="100" y="80" text-anchor="middle" font-size="14" fill="#666">・メトリクス収集問題</text>
+        <text x="100" y="110" text-anchor="middle" font-size="14" fill="#666">・アラーム設定問題</text>
+        <text x="100" y="140" text-anchor="middle" font-size="14" fill="#666">・ログ収集問題</text>
+    </g>
+</svg> 

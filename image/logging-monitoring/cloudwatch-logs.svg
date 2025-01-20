@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+    <!-- 背景 -->
+    <rect width="800" height="400" fill="#f8f9fa"/>
+    
+    <!-- タイトル -->
+    <text x="400" y="50" text-anchor="middle" font-size="24" font-weight="bold" fill="#232f3e">CloudWatch Logs</text>
+    
+    <!-- ログソース -->
+    <g transform="translate(50,100)">
+        <rect width="200" height="200" rx="10" fill="#E6F3FF"/>
+        <text x="100" y="40" text-anchor="middle" font-size="16" fill="#232f3e">ログソース</text>
+        <text x="100" y="80" text-anchor="middle" font-size="14" fill="#666">・アプリケーション</text>
+        <text x="100" y="110" text-anchor="middle" font-size="14" fill="#666">・システム</text>
+        <text x="100" y="140" text-anchor="middle" font-size="14" fill="#666">・AWS サービス</text>
+    </g>
+    
+    <!-- 矢印 -->
+    <path d="M 250,200 L 300,200" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+    
+    <!-- ログストリーム -->
+    <g transform="translate(300,100)">
+        <rect width="200" height="200" rx="10" fill="#CCE5FF"/>
+        <text x="100" y="40" text-anchor="middle" font-size="16" fill="#232f3e">ログストリーム</text>
+        <text x="100" y="80" text-anchor="middle" font-size="14" fill="#666">・リアルタイム処理</text>
+        <text x="100" y="110" text-anchor="middle" font-size="14" fill="#666">・フィルタリング</text>
+        <text x="100" y="140" text-anchor="middle" font-size="14" fill="#666">・保持期間管理</text>
+    </g>
+    
+    <!-- 矢印 -->
+    <path d="M 500,200 L 550,200" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+    
+    <!-- 分析・活用 -->
+    <g transform="translate(550,100)">
+        <rect width="200" height="200" rx="10" fill="#B3D7FF"/>
+        <text x="100" y="40" text-anchor="middle" font-size="16" fill="#232f3e">分析・活用</text>
+        <text x="100" y="80" text-anchor="middle" font-size="14" fill="#666">・パターン検出</text>
+        <text x="100" y="110" text-anchor="middle" font-size="14" fill="#666">・メトリクス生成</text>
+        <text x="100" y="140" text-anchor="middle" font-size="14" fill="#666">・アラート通知</text>
+    </g>
+    
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+        </marker>
+    </defs>
+</svg> 

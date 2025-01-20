@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+    <!-- 背景 -->
+    <rect width="800" height="600" fill="#ffffff"/>
+    
+    <!-- 上部セクション：サービスの価値 -->
+    <rect x="50" y="20" width="730" height="250" fill="#f3f9ff" rx="10"/>
+    <text x="60" y="45" font-size="16" fill="#2c5282" font-weight="bold">サービス利用による価値</text>
+    
+    <!-- 課題 → ソリューション → 利益のフロー -->
+    <!-- 課題ボックス -->
+    <rect x="80" y="70" width="180" height="160" fill="#ffebee" rx="5"/>
+    <text x="100" y="100" font-size="14" fill="#c62828" font-weight="bold">課題</text>
+    <text x="90" y="130" font-size="12">
+        <tspan x="90" dy="0">・リソース管理の重複</tspan>
+        <tspan x="90" dy="20">・管理オーバーヘッド大</tspan>
+        <tspan x="90" dy="20">・アカウント間連携の複雑さ</tspan>
+    </text>
+
+    <!-- 矢印1 -->
+    <path d="M 270 150 L 320 150" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+    
+    <!-- ソリューションボックス -->
+    <rect x="330" y="70" width="180" height="160" fill="#e3f2fd" rx="5"/>
+    <text x="350" y="100" font-size="14" fill="#1565c0" font-weight="bold">AWS RAMによる解決</text>
+    <text x="340" y="130" font-size="12">
+        <tspan x="340" dy="0">・一元的なリソース共有</tspan>
+        <tspan x="340" dy="20">・簡単な権限管理</tspan>
+        <tspan x="340" dy="20">・Organizations統合</tspan>
+    </text>
+
+    <!-- 矢印2 -->
+    <path d="M 520 150 L 570 150" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+    
+    <!-- 利益ボックス -->
+    <rect x="580" y="70" width="180" height="160" fill="#e8f5e9" rx="5"/>
+    <text x="600" y="100" font-size="14" fill="#2e7d32" font-weight="bold">得られる利益</text>
+    <text x="590" y="130" font-size="12">
+        <tspan x="590" dy="0">・管理工数の削減</tspan>
+        <tspan x="590" dy="20">・コスト最適化</tspan>
+        <tspan x="590" dy="20">・運用効率の向上</tspan>
+    </text>
+
+    <!-- 下部セクション：実装フロー -->
+    <rect x="50" y="300" width="730" height="280" fill="#f3f9ff" rx="10"/>
+    <text x="60" y="325" font-size="16" fill="#2c5282" font-weight="bold">実装フロー</text>
+
+    <!-- Step 1 -->
+    <rect x="80" y="350" width="180" height="100" fill="#e3f2fd" rx="5"/>
+    <text x="90" y="375" font-size="14" fill="#1565c0" font-weight="bold">Step 1</text>
+    <text x="90" y="400" font-size="12">
+        <tspan x="90" dy="0">リソース共有の詳細設定</tspan>
+        <tspan x="90" dy="20">・共有名の設定</tspan>
+        <tspan x="90" dy="20">・リソースタイプの選択</tspan>
+    </text>
+
+    <!-- 矢印3 -->
+    <path d="M 270 400 L 320 400" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <!-- Step 2 -->
+    <rect x="330" y="350" width="180" height="100" fill="#e3f2fd" rx="5"/>
+    <text x="340" y="375" font-size="14" fill="#1565c0" font-weight="bold">Step 2</text>
+    <text x="340" y="400" font-size="12">
+        <tspan x="340" dy="0">アクセス許可の設定</tspan>
+        <tspan x="340" dy="20">・許可ロールの設定</tspan>
+        <tspan x="340" dy="20">・権限の関連付け</tspan>
+    </text>
+
+    <!-- 矢印4 -->
+    <path d="M 520 400 L 570 400" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <!-- Step 3 -->
+    <rect x="580" y="350" width="180" height="100" fill="#e3f2fd" rx="5"/>
+    <text x="590" y="375" font-size="14" fill="#1565c0" font-weight="bold">Step 3</text>
+    <text x="590" y="400" font-size="12">
+        <tspan x="590" dy="0">プリンシパルの選択</tspan>
+        <tspan x="590" dy="20">・共有先アカウントの選択</tspan>
+        <tspan x="590" dy="20">・組織内/外部の指定</tspan>
+    </text>
+
+    <!-- 補足情報 -->
+    <text x="80" y="500" font-size="12" fill="#666">
+        <tspan x="80" dy="0">共有者：リソース所有者としてリソース共有を作成・管理</tspan>
+        <tspan x="80" dy="20">共有受取人：招待を受けて共有リソースを利用</tspan>
+    </text>
+
+    <!-- 矢印の定義 -->
+    <defs>
+        <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="6" markerHeight="6" orient="auto">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#666"/>
+        </marker>
+    </defs>
+</svg>

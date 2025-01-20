@@ -35,3 +35,7 @@
 ## Landing Zone とは
 
 ![AboutLandingZone](/image/multi-account/landing-zone-concept.svg)
+
+## Service-catalog
+
+![service-catalog](/image/multi-account/service-catalog-problems-solutions.svg)

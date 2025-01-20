@@ -1,0 +1,70 @@
+<svg width="950" height="600" xmlns="http://www.w3.org/2000/svg">
+    <!-- 背景色を追加 -->
+    <rect width="950" height="600" fill="white"/>
+    
+    <style>
+        text { font-family: Arial; }
+        .title { font-size: 24px; font-weight: bold; }
+        .subtitle { font-size: 18px; font-weight: bold; }
+        .description { font-size: 14px; }
+        .problem-box { fill: #FFCDD2; stroke: #E57373; stroke-width: 2; }
+        .solution-box { fill: #BBDEFB; stroke: #64B5F6; stroke-width: 2; }
+        .benefit-box { fill: #C8E6C9; stroke: #81C784; stroke-width: 2; }
+        .arrow { stroke: #666; stroke-width: 2; marker-end: url(#arrowhead); }
+    </style>
+
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+        </marker>
+    </defs>
+
+    <!-- タイトル -->
+    <text x="450" y="50" text-anchor="middle" class="title">AWS Service Catalog: 問題と解決策</text>
+
+    <!-- 問題領域 -->
+    <rect x="50" y="80" width="250" height="440" rx="10" class="problem-box"/>
+    <text x="175" y="120" text-anchor="middle" class="subtitle" fill="#C62828">組織の課題</text>
+    
+    <text x="70" y="160" class="description">• リソース作成の統制が効かない</text>
+    <text x="70" y="190" class="description">• 承認プロセスが不明確</text>
+    <text x="70" y="220" class="description">• セキュリティ基準が不統一</text>
+    <text x="70" y="250" class="description">• コスト管理が困難</text>
+    <text x="70" y="280" class="description">• 環境構築に時間がかかる</text>
+    <text x="70" y="310" class="description">• 構成管理が複雑化</text>
+    <text x="70" y="340" class="description">• 運用負荷が高い</text>
+
+    <!-- ソリューション領域 -->
+    <rect x="350" y="80" width="250" height="440" rx="10" class="solution-box"/>
+    <text x="475" y="120" text-anchor="middle" class="subtitle" fill="#1565C0">Service Catalogの機能</text>
+
+    <text x="370" y="160" class="description">• 承認済み製品のカタログ化</text>
+    <text x="370" y="190" class="description">• IAMと連携したアクセス制御</text>
+    <text x="370" y="220" class="description">• 制約による使用制限</text>
+    <text x="370" y="250" class="description">• バージョン管理機能</text>
+    <text x="370" y="280" class="description">• セルフサービスポータル</text>
+    <text x="370" y="310" class="description">• テンプレート化による標準化</text>
+    <text x="370" y="340" class="description">• タグ管理・コスト管理</text>
+
+    <!-- メリット領域 -->
+    <rect x="650" y="80" width="250" height="440" rx="10" class="benefit-box"/>
+    <text x="775" y="120" text-anchor="middle" class="subtitle" fill="#2E7D32">得られる効果</text>
+
+    <text x="670" y="160" class="description">• IT統制の実現</text>
+    <text x="670" y="190" class="description">• セキュリティの標準化</text>
+    <text x="670" y="220" class="description">• コストの最適化</text>
+    <text x="670" y="250" class="description">• 展開時間の短縮</text>
+    <text x="670" y="280" class="description">• 運用工数の削減</text>
+    <text x="670" y="310" class="description">• コンプライアンス遵守</text>
+    <text x="670" y="340" class="description">• 開発生産性の向上</text>
+
+    <!-- 矢印 -->
+    <line x1="300" y1="300" x2="350" y2="300" class="arrow"/>
+    <line x1="600" y1="300" x2="650" y2="300" class="arrow"/>
+
+    <!-- 補足説明 -->
+    <text x="450" y="560" text-anchor="middle" font-size="16" fill="#666">
+        セルフサービス型のAWSリソース管理プラットフォーム
+    </text>
+
+</svg>

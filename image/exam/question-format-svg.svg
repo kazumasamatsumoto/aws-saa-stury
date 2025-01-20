@@ -1,0 +1,87 @@
+<svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <!-- 角丸の背景用 -->
+        <clipPath id="rounded-corners">
+            <rect x="50" y="20" width="700" height="360" rx="8" ry="8"/>
+        </clipPath>
+        <!-- パーセンテージバッジ用 -->
+        <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+            <feDropShadow dx="1" dy="1" stdDeviation="1" flood-opacity="0.1"/>
+        </filter>
+    </defs>
+
+    <!-- カード本体 -->
+    <rect x="50" y="20" width="700" height="360" fill="white" 
+          stroke="#e5e7eb" stroke-width="1" rx="8" ry="8"/>
+
+    <!-- ヘッダー背景 -->
+    <rect x="50" y="20" width="700" height="60" fill="#F8FAFC" rx="8" ry="8"/>
+    
+    <!-- タイトル -->
+    <text x="400" y="55" text-anchor="middle" 
+          font-family="Helvetica, sans-serif" 
+          font-size="20" font-weight="bold">
+        試験の問題形式分布
+    </text>
+
+    <!-- テーブルヘッダー -->
+    <rect x="70" y="100" width="660" height="40" fill="#F1F5F9"/>
+    <text font-family="Helvetica, sans-serif" font-size="14" font-weight="600" fill="#374151">
+        <tspan x="90" y="125">No.</tspan>
+        <tspan x="160" y="125">問題形式</tspan>
+        <tspan x="400" y="125">選択肢</tspan>
+        <tspan x="650" y="125">出題比率</tspan>
+    </text>
+
+    <!-- テーブル行 -->
+    <!-- 1行目 -->
+    <rect x="70" y="140" width="660" height="60" fill="white" />
+    <text font-family="Helvetica, sans-serif" font-size="14" fill="#374151">
+        <tspan x="90" y="175">1</tspan>
+        <tspan x="160" y="175">1つの正解を選ぶ問題</tspan>
+        <tspan x="400" y="175">A, B, C, D から1つ選択</tspan>
+    </text>
+    <rect x="600" y="157" width="100" height="26" rx="13" ry="13" 
+          fill="#EFF6FF"/>
+    <text x="650" y="175" text-anchor="middle" 
+          font-family="Helvetica, sans-serif" font-size="14" 
+          fill="#1D4ED8" font-weight="500">
+        60-70%
+    </text>
+
+    <!-- 2行目 -->
+    <rect x="70" y="200" width="660" height="60" fill="white" />
+    <text font-family="Helvetica, sans-serif" font-size="14" fill="#374151">
+        <tspan x="90" y="235">2</tspan>
+        <tspan x="160" y="235">2つの正解を選ぶ問題</tspan>
+        <tspan x="400" y="235">A, B, C, D, E から2つ選択</tspan>
+    </text>
+    <rect x="600" y="217" width="100" height="26" rx="13" ry="13" 
+          fill="#EFF6FF"/>
+    <text x="650" y="235" text-anchor="middle" 
+          font-family="Helvetica, sans-serif" font-size="14" 
+          fill="#1D4ED8" font-weight="500">
+        20-30%
+    </text>
+
+    <!-- 3行目 -->
+    <rect x="70" y="260" width="660" height="60" fill="white" />
+    <text font-family="Helvetica, sans-serif" font-size="14" fill="#374151">
+        <tspan x="90" y="295">3</tspan>
+        <tspan x="160" y="295">3つの正解を選ぶ問題</tspan>
+        <tspan x="400" y="295">A, B, C, D, E, F から3つ選択</tspan>
+    </text>
+    <rect x="600" y="277" width="100" height="26" rx="13" ry="13" 
+          fill="#EFF6FF"/>
+    <text x="650" y="295" text-anchor="middle" 
+          font-family="Helvetica, sans-serif" font-size="14" 
+          fill="#1D4ED8" font-weight="500">
+        5-10%
+    </text>
+
+    <!-- 区切り線 -->
+    <line x1="70" y1="140" x2="730" y2="140" stroke="#e5e7eb" stroke-width="1"/>
+    <line x1="70" y1="200" x2="730" y2="200" stroke="#e5e7eb" stroke-width="1"/>
+    <line x1="70" y1="260" x2="730" y2="260" stroke="#e5e7eb" stroke-width="1"/>
+    <line x1="70" y1="320" x2="730" y2="320" stroke="#e5e7eb" stroke-width="1"/>
+</svg>

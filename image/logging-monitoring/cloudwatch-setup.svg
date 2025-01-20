@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+    <!-- 背景 -->
+    <rect width="800" height="500" fill="#f8f9fa"/>
+    
+    <!-- タイトル -->
+    <text x="400" y="50" text-anchor="middle" font-size="24" font-weight="bold" fill="#232f3e">CloudWatch 導入ステップ</text>
+    
+    <!-- ステップ1 -->
+    <g transform="translate(100,100)">
+        <circle cx="30" cy="30" r="25" fill="#FF9900"/>
+        <text x="30" y="35" text-anchor="middle" font-size="20" fill="white">1</text>
+        <rect x="70" y="10" width="200" height="40" rx="5" fill="#E6F3FF"/>
+        <text x="170" y="35" text-anchor="middle" font-size="16" fill="#232f3e">IAMロールの設定</text>
+    </g>
+    
+    <!-- 矢印1 -->
+    <path d="M 200,160 L 200,200" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+    
+    <!-- ステップ2 -->
+    <g transform="translate(100,200)">
+        <circle cx="30" cy="30" r="25" fill="#FF9900"/>
+        <text x="30" y="35" text-anchor="middle" font-size="20" fill="white">2</text>
+        <rect x="70" y="10" width="200" height="40" rx="5" fill="#E6F3FF"/>
+        <text x="170" y="35" text-anchor="middle" font-size="16" fill="#232f3e">エージェントのインストール</text>
+    </g>
+    
+    <!-- 矢印2 -->
+    <path d="M 200,260 L 200,300" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+    
+    <!-- ステップ3 -->
+    <g transform="translate(100,300)">
+        <circle cx="30" cy="30" r="25" fill="#FF9900"/>
+        <text x="30" y="35" text-anchor="middle" font-size="20" fill="white">3</text>
+        <rect x="70" y="10" width="200" height="40" rx="5" fill="#E6F3FF"/>
+        <text x="170" y="35" text-anchor="middle" font-size="16" fill="#232f3e">メトリクスの設定</text>
+    </g>
+    
+    <!-- 矢印3 -->
+    <path d="M 200,360 L 200,400" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+    
+    <!-- ステップ4 -->
+    <g transform="translate(100,400)">
+        <circle cx="30" cy="30" r="25" fill="#FF9900"/>
+        <text x="30" y="35" text-anchor="middle" font-size="20" fill="white">4</text>
+        <rect x="70" y="10" width="200" height="40" rx="5" fill="#E6F3FF"/>
+        <text x="170" y="35" text-anchor="middle" font-size="16" fill="#232f3e">アラームの設定</text>
+    </g>
+    
+    <!-- 補足情報 -->
+    <g transform="translate(400,150)">
+        <rect width="300" height="200" rx="10" fill="#CCE5FF"/>
+        <text x="150" y="40" text-anchor="middle" font-size="16" fill="#232f3e">設定のポイント</text>
+        <text x="30" y="80" font-size="14" fill="#666">・必要な権限を確認</text>
+        <text x="30" y="110" font-size="14" fill="#666">・監視項目の優先順位付け</text>
+        <text x="30" y="140" font-size="14" fill="#666">・アラートしきい値の検討</text>
+        <text x="30" y="170" font-size="14" fill="#666">・通知先の設定確認</text>
+    </g>
+    
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+        </marker>
+    </defs>
+</svg>

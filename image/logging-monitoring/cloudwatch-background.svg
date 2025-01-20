@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+    <!-- 背景 -->
+    <rect width="800" height="400" fill="#f8f9fa"/>
+    
+    <!-- タイトル -->
+    <text x="400" y="50" text-anchor="middle" font-size="24" font-weight="bold" fill="#232f3e">CloudWatchが生まれた背景</text>
+    
+    <!-- 中央の雲のアイコン -->
+    <circle cx="400" cy="120" r="40" fill="#FF9900"/>
+    <text x="400" y="128" text-anchor="middle" font-size="20" fill="white">AWS</text>
+    
+    <!-- 課題領域 -->
+    <g transform="translate(100,200)">
+        <rect width="240" height="140" rx="10" fill="#E6F3FF"/>
+        <text x="120" y="40" text-anchor="middle" font-size="16" fill="#232f3e">従来の課題</text>
+        <text x="120" y="70" text-anchor="middle" font-size="14" fill="#666">・複数システムの監視が困難</text>
+        <text x="120" y="90" text-anchor="middle" font-size="14" fill="#666">・統合監視の仕組みがない</text>
+        <text x="120" y="110" text-anchor="middle" font-size="14" fill="#666">・カスタム指標の取得が困難</text>
+    </g>
+    
+    <!-- 矢印 -->
+    <path d="M 350,260 L 450,260" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+        </marker>
+    </defs>
+    
+    <!-- 解決策 -->
+    <g transform="translate(500,200)">
+        <rect width="240" height="140" rx="10" fill="#CCE5FF"/>
+        <text x="120" y="40" text-anchor="middle" font-size="16" fill="#232f3e">CloudWatchの解決策</text>
+        <text x="120" y="70" text-anchor="middle" font-size="14" fill="#666">・統合監視プラットフォーム</text>
+        <text x="120" y="90" text-anchor="middle" font-size="14" fill="#666">・リアルタイムモニタリング</text>
+        <text x="120" y="110" text-anchor="middle" font-size="14" fill="#666">・カスタムメトリクス対応</text>
+    </g>
+</svg>

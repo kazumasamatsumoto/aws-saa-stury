@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500">
+    <!-- 背景 -->
+    <rect width="900" height="500" fill="#f8f9fa"/>
+    
+    <!-- タイトル -->
+    <text x="400" y="50" text-anchor="middle" font-size="24" font-weight="bold" fill="#232f3e">CloudWatch の仕組み</text>
+    
+    <!-- データ収集部分 -->
+    <g transform="translate(50,100)">
+        <rect width="200" height="150" rx="10" fill="#E6F3FF"/>
+        <text x="100" y="30" text-anchor="middle" font-size="16" fill="#232f3e">データ収集</text>
+        <text x="100" y="60" text-anchor="middle" font-size="14" fill="#666">・メトリクス</text>
+        <text x="100" y="85" text-anchor="middle" font-size="14" fill="#666">・ログ</text>
+        <text x="100" y="110" text-anchor="middle" font-size="14" fill="#666">・イベント</text>
+    </g>
+    
+    <!-- 矢印1 -->
+    <path d="M 250,175 L 350,175" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+    
+    <!-- 処理部分 -->
+    <g transform="translate(350,100)">
+        <rect width="200" height="150" rx="10" fill="#CCE5FF"/>
+        <text x="100" y="30" text-anchor="middle" font-size="16" fill="#232f3e">処理・分析</text>
+        <text x="100" y="60" text-anchor="middle" font-size="14" fill="#666">・データ集約</text>
+        <text x="100" y="85" text-anchor="middle" font-size="14" fill="#666">・統計処理</text>
+        <text x="100" y="110" text-anchor="middle" font-size="14" fill="#666">・異常検知</text>
+    </g>
+    
+    <!-- 矢印2 -->
+    <path d="M 550,175 L 650,175" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+    
+    <!-- アクション部分 -->
+    <g transform="translate(650,100)">
+        <rect width="200" height="150" rx="10" fill="#B3D7FF"/>
+        <text x="100" y="30" text-anchor="middle" font-size="16" fill="#232f3e">アクション</text>
+        <text x="100" y="60" text-anchor="middle" font-size="14" fill="#666">・アラート通知</text>
+        <text x="100" y="85" text-anchor="middle" font-size="14" fill="#666">・自動化対応</text>
+        <text x="100" y="110" text-anchor="middle" font-size="14" fill="#666">・可視化</text>
+    </g>
+    
+    <!-- 補足説明 -->
+    <g transform="translate(100,300)">
+        <rect width="600" height="150" rx="10" fill="#F0F7FF"/>
+        <text x="300" y="30" text-anchor="middle" font-size="16" fill="#232f3e">主な特徴</text>
+        <text x="50" y="60" font-size="14" fill="#666">・リアルタイムモニタリング</text>
+        <text x="50" y="85" font-size="14" fill="#666">・カスタムメトリクスの柔軟な設定</text>
+        <text x="50" y="110" font-size="14" fill="#666">・AWSサービスとの連携</text>
+        <text x="50" y="135" font-size="14" fill="#666">・スケーラブルな監視基盤</text>
+    </g>
+    
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+        </marker>
+    </defs>
+</svg>

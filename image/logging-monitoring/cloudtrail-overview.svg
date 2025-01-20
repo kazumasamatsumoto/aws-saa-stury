@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+    <!-- 背景 -->
+    <rect width="800" height="400" fill="#f8f9fa"/>
+    
+    <!-- タイトル -->
+    <text x="400" y="50" text-anchor="middle" font-size="24" font-weight="bold" fill="#232f3e">AWS CloudTrail Overview</text>
+    
+    <!-- APIコール -->
+    <g transform="translate(50,100)">
+        <rect width="150" height="200" rx="10" fill="#FF9900"/>
+        <text x="75" y="40" text-anchor="middle" font-size="16" fill="white">APIコール</text>
+        <text x="75" y="80" text-anchor="middle" font-size="14" fill="white">・管理操作</text>
+        <text x="75" y="110" text-anchor="middle" font-size="14" fill="white">・データ操作</text>
+        <text x="75" y="140" text-anchor="middle" font-size="14" fill="white">・異常検知</text>
+    </g>
+    
+    <!-- 矢印 -->
+    <path d="M 200,200 L 250,200" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+    
+    <!-- CloudTrail -->
+    <g transform="translate(250,100)">
+        <rect width="200" height="200" rx="10" fill="#527FFF"/>
+        <text x="100" y="40" text-anchor="middle" font-size="16" fill="white">CloudTrail</text>
+        <text x="100" y="80" text-anchor="middle" font-size="14" fill="white">・証跡記録</text>
+        <text x="100" y="110" text-anchor="middle" font-size="14" fill="white">・イベント分類</text>
+        <text x="100" y="140" text-anchor="middle" font-size="14" fill="white">・Insights分析</text>
+    </g>
+    
+    <!-- 矢印 -->
+    <path d="M 450,200 L 500,200" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+    
+    <!-- 保存先 -->
+    <g transform="translate(500,100)">
+        <rect width="250" height="200" rx="10" fill="#56C0A7"/>
+        <text x="125" y="40" text-anchor="middle" font-size="16" fill="white">保存・セキュリティ</text>
+        <text x="125" y="80" text-anchor="middle" font-size="14" fill="white">・S3（長期保管）</text>
+        <text x="125" y="110" text-anchor="middle" font-size="14" fill="white">・暗号化（SSE-S3/KMS）</text>
+        <text x="125" y="140" text-anchor="middle" font-size="14" fill="white">・アクセス制御</text>
+    </g>
+    
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+        </marker>
+    </defs>
+</svg> 

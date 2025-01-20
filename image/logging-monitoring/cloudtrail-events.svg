@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+    <!-- 背景 -->
+    <rect width="800" height="400" fill="#f8f9fa"/>
+    
+    <!-- タイトル -->
+    <text x="400" y="50" text-anchor="middle" font-size="24" font-weight="bold" fill="#232f3e">CloudTrail イベントタイプ</text>
+    
+    <!-- 管理イベント -->
+    <g transform="translate(50,100)">
+        <rect width="200" height="200" rx="10" fill="#E6F3FF"/>
+        <text x="100" y="40" text-anchor="middle" font-size="16" fill="#232f3e">管理イベント</text>
+        <text x="100" y="80" text-anchor="middle" font-size="14" fill="#666">・EC2起動/停止</text>
+        <text x="100" y="110" text-anchor="middle" font-size="14" fill="#666">・IAMポリシー更新</text>
+        <text x="100" y="140" text-anchor="middle" font-size="14" fill="#666">・セキュリティ設定</text>
+    </g>
+    
+    <!-- データイベント -->
+    <g transform="translate(300,100)">
+        <rect width="200" height="200" rx="10" fill="#CCE5FF"/>
+        <text x="100" y="40" text-anchor="middle" font-size="16" fill="#232f3e">データイベント</text>
+        <text x="100" y="80" text-anchor="middle" font-size="14" fill="#666">・S3オブジェクト操作</text>
+        <text x="100" y="110" text-anchor="middle" font-size="14" fill="#666">・Lambda実行</text>
+        <text x="100" y="140" text-anchor="middle" font-size="14" fill="#666">・DynamoDB操作</text>
+    </g>
+    
+    <!-- Insightsイベント -->
+    <g transform="translate(550,100)">
+        <rect width="200" height="200" rx="10" fill="#B3D7FF"/>
+        <text x="100" y="40" text-anchor="middle" font-size="16" fill="#232f3e">Insightsイベント</text>
+        <text x="100" y="80" text-anchor="middle" font-size="14" fill="#666">・異常なAPI呼び出し</text>
+        <text x="100" y="110" text-anchor="middle" font-size="14" fill="#666">・エラー率の変化</text>
+        <text x="100" y="140" text-anchor="middle" font-size="14" fill="#666">・リソース作成急増</text>
+    </g>
+</svg> 

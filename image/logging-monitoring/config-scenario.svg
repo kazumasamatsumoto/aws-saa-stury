@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600">
+    <!-- 背景 -->
+    <rect width="1200" height="600" fill="#ffffff"/>
+    
+    <!-- タイトル -->
+    <text x="600" y="80" text-anchor="middle" font-size="28" font-weight="bold" fill="#232f3e">AWS Config による問題解決</text>
+    
+    <!-- 左側の問題 -->
+    <g transform="translate(100,150)">
+        <rect width="300" height="180" rx="10" fill="#FFE4E1"/>
+        <text x="150" y="60" text-anchor="middle" font-size="16" fill="#666">・設定変更の追跡が困難</text>
+        <text x="150" y="100" text-anchor="middle" font-size="16" fill="#666">・コンプライアンス違反</text>
+        <text x="150" y="140" text-anchor="middle" font-size="16" fill="#666">・手動での確認が多い</text>
+    </g>
+    
+    <!-- 中央のAWS Config -->
+    <g transform="translate(450,150)">
+        <rect width="300" height="180" rx="10" fill="#527FFF" opacity="0.7"/>
+        <text x="150" y="40" text-anchor="middle" font-size="18" fill="#fff">AWS Config</text>
+        <text x="150" y="80" text-anchor="middle" font-size="16" fill="#fff">・自動監視</text>
+        <text x="150" y="120" text-anchor="middle" font-size="16" fill="#fff">・ルールベース評価</text>
+        <text x="150" y="160" text-anchor="middle" font-size="16" fill="#fff">・自動修復</text>
+    </g>
+    
+    <!-- 右側の解決後 -->
+    <g transform="translate(800,150)">
+        <rect width="300" height="180" rx="10" fill="#E6F3FF"/>
+        <text x="150" y="60" text-anchor="middle" font-size="16" fill="#666">・自動化された監視</text>
+        <text x="150" y="100" text-anchor="middle" font-size="16" fill="#666">・コンプライアンス準拠</text>
+        <text x="150" y="140" text-anchor="middle" font-size="16" fill="#666">・効率的な運用</text>
+    </g>
+    
+    <!-- 区切り線 -->
+    <line x1="100" y1="400" x2="1100" y2="400" stroke="#666" stroke-width="1" stroke-dasharray="4,4"/>
+    
+    <!-- 下部の説明 -->
+    <g transform="translate(100,450)">
+        <rect width="1000" height="100" rx="10" fill="#f8f9fa"/>
+        <text x="500" y="40" text-anchor="middle" font-size="18" fill="#232f3e">AWS Config による主な改善点</text>
+        <text x="200" y="70" text-anchor="middle" font-size="16" fill="#666">1. 構成変更の自動追跡</text>
+        <text x="500" y="70" text-anchor="middle" font-size="16" fill="#666">2. コンプライアンスの自動評価</text>
+        <text x="800" y="70" text-anchor="middle" font-size="16" fill="#666">3. 問題の自動修復</text>
+    </g>
+    
+    <!-- 矢印 -->
+    <g>
+        <path d="M 400,240 L 450,240" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+        <path d="M 750,240 L 800,240" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+    </g>
+    
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+        </marker>
+    </defs>
+</svg> 

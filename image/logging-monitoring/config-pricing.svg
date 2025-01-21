@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+    <!-- 背景 -->
+    <rect width="800" height="500" fill="#f8f9fa"/>
+    
+    <!-- タイトル -->
+    <text x="400" y="50" text-anchor="middle" font-size="24" font-weight="bold" fill="#232f3e">AWS Config 料金体系</text>
+    
+    <!-- 料金発生ポイント -->
+    <g transform="translate(50,100)">
+        <!-- 時間軸 -->
+        <line x1="0" y1="300" x2="700" y2="300" stroke="#666" stroke-width="2"/>
+        <text x="350" y="330" text-anchor="middle" font-size="14" fill="#666">時間の経過</text>
+        
+        <!-- Config Rules -->
+        <g transform="translate(50,0)">
+            <rect width="150" height="100" rx="10" fill="#FF9900"/>
+            <text x="75" y="40" text-anchor="middle" font-size="16" fill="white">Config Rules</text>
+            <text x="75" y="70" text-anchor="middle" font-size="14" fill="white">月額料金</text>
+            <!-- 料金矢印 -->
+            <path d="M 75,100 L 75,290" stroke="#FF9900" stroke-width="2" stroke-dasharray="5,5"/>
+            <circle cx="75" cy="300" r="5" fill="#FF9900"/>
+        </g>
+        
+        <!-- Conformance Packs -->
+        <g transform="translate(250,0)">
+            <rect width="150" height="100" rx="10" fill="#527FFF"/>
+            <text x="75" y="40" text-anchor="middle" font-size="16" fill="white">Conformance</text>
+            <text x="75" y="60" text-anchor="middle" font-size="16" fill="white">Packs</text>
+            <text x="75" y="80" text-anchor="middle" font-size="14" fill="white">パック単位</text>
+            <!-- 料金矢印 -->
+            <path d="M 75,100 L 75,290" stroke="#527FFF" stroke-width="2" stroke-dasharray="5,5"/>
+            <circle cx="75" cy="300" r="5" fill="#527FFF"/>
+        </g>
+        
+        <!-- スナップショット -->
+        <g transform="translate(450,0)">
+            <rect width="150" height="100" rx="10" fill="#56C0A7"/>
+            <text x="75" y="40" text-anchor="middle" font-size="16" fill="white">スナップショット</text>
+            <text x="75" y="70" text-anchor="middle" font-size="14" fill="white">保存容量単位</text>
+            <!-- 料金矢印 -->
+            <path d="M 75,100 L 75,290" stroke="#56C0A7" stroke-width="2" stroke-dasharray="5,5"/>
+            <circle cx="75" cy="300" r="5" fill="#56C0A7"/>
+        </g>
+    </g>
+    
+    <!-- 注釈 -->
+    <g transform="translate(50,420)">
+        <text x="0" y="0" font-size="14" fill="#666">※ 無料利用枠あり：</text>
+        <text x="0" y="25" font-size="14" fill="#666">- 最初の記録項目は無料</text>
+        <text x="0" y="50" font-size="14" fill="#666">- 一部のルールは無料で利用可能</text>
+    </g>
+</svg> 

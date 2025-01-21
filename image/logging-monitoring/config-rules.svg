@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+    <!-- 背景 -->
+    <rect width="800" height="400" fill="#f8f9fa"/>
+    
+    <!-- タイトル -->
+    <text x="400" y="50" text-anchor="middle" font-size="24" font-weight="bold" fill="#232f3e">AWS Config Rules</text>
+    
+    <!-- AWS Managed Rules -->
+    <g transform="translate(50,100)">
+        <rect width="200" height="200" rx="10" fill="#E6F3FF"/>
+        <text x="100" y="40" text-anchor="middle" font-size="16" fill="#232f3e">AWS Managed Rules</text>
+        <text x="100" y="80" text-anchor="middle" font-size="14" fill="#666">・事前定義ルール</text>
+        <text x="100" y="110" text-anchor="middle" font-size="14" fill="#666">・セキュリティ確認</text>
+        <text x="100" y="140" text-anchor="middle" font-size="14" fill="#666">・ベストプラクティス</text>
+    </g>
+    
+    <!-- Customer Managed Rules -->
+    <g transform="translate(300,100)">
+        <rect width="200" height="200" rx="10" fill="#CCE5FF"/>
+        <text x="100" y="40" text-anchor="middle" font-size="16" fill="#232f3e">Custom Rules</text>
+        <text x="100" y="80" text-anchor="middle" font-size="14" fill="#666">・カスタムルール</text>
+        <text x="100" y="110" text-anchor="middle" font-size="14" fill="#666">・Lambda関数</text>
+        <text x="100" y="140" text-anchor="middle" font-size="14" fill="#666">・独自の評価基準</text>
+    </g>
+    
+    <!-- 評価方法 -->
+    <g transform="translate(550,100)">
+        <rect width="200" height="200" rx="10" fill="#B3D7FF"/>
+        <text x="100" y="40" text-anchor="middle" font-size="16" fill="#232f3e">評価方法</text>
+        <text x="100" y="80" text-anchor="middle" font-size="14" fill="#666">・連続的評価</text>
+        <text x="100" y="110" text-anchor="middle" font-size="14" fill="#666">・定期的評価</text>
+        <text x="100" y="140" text-anchor="middle" font-size="14" fill="#666">・自動修復</text>
+    </g>
+</svg> 

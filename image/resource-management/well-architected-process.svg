@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600">
+    <!-- 背景 -->
+    <rect width="1200" height="600" fill="#ffffff"/>
+    
+    <!-- タイトル -->
+    <text x="600" y="80" text-anchor="middle" font-size="28" font-weight="bold" fill="#232f3e">Well-Architected 評価プロセス</text>
+    
+    <!-- ステップ1: 評価 -->
+    <g transform="translate(100,150)">
+        <rect width="250" height="100" rx="10" fill="#FFE4E1"/>
+        <text x="125" y="40" text-anchor="middle" font-size="16" fill="#666">1. アーキテクチャ評価</text>
+        <text x="125" y="70" text-anchor="middle" font-size="14" fill="#666">各柱に基づく現状分析</text>
+    </g>
+    
+    <!-- ステップ2: 分析 -->
+    <g transform="translate(400,150)">
+        <rect width="250" height="100" rx="10" fill="#527FFF" opacity="0.7"/>
+        <text x="125" y="40" text-anchor="middle" font-size="16" fill="#fff">2. ギャップ分析</text>
+        <text x="125" y="70" text-anchor="middle" font-size="14" fill="#fff">改善点の特定</text>
+    </g>
+    
+    <!-- ステップ3: 改善 -->
+    <g transform="translate(700,150)">
+        <rect width="250" height="100" rx="10" fill="#E6F3FF"/>
+        <text x="125" y="40" text-anchor="middle" font-size="16" fill="#666">3. 改善計画</text>
+        <text x="125" y="70" text-anchor="middle" font-size="14" fill="#666">優先順位付けと実装</text>
+    </g>
+    
+    <!-- 評価基準 -->
+    <g transform="translate(100,300)">
+        <rect width="850" height="200" rx="10" fill="#f6f8fa"/>
+        <text x="425" y="40" text-anchor="middle" font-size="18" fill="#232f3e">評価基準</text>
+        <text x="50" y="80" font-size="14" fill="#666">・ベストプラクティスへの準拠</text>
+        <text x="50" y="110" font-size="14" fill="#666">・リスクの特定と軽減</text>
+        <text x="50" y="140" font-size="14" fill="#666">・継続的な改善</text>
+        <text x="50" y="170" font-size="14" fill="#666">・ビジネス目標との整合性</text>
+    </g>
+    
+    <!-- 矢印 -->
+    <g>
+        <path d="M 350,200 L 400,200" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+        <path d="M 650,200 L 700,200" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+    </g>
+    
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+        </marker>
+    </defs>
+</svg> 

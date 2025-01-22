@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600">
+    <!-- 背景 -->
+    <rect width="1200" height="600" fill="#ffffff"/>
+    
+    <!-- タイトル -->
+    <text x="600" y="80" text-anchor="middle" font-size="28" font-weight="bold" fill="#232f3e">AWS Well-Architected Framework</text>
+    
+    <!-- 6つの柱を2行3列で配置 -->
+    <!-- 1行目 -->
+    <g transform="translate(150,150)">
+        <!-- オペレーショナルエクセレンス -->
+        <rect width="280" height="160" rx="10" fill="#FFE4E1"/>
+        <text x="140" y="50" text-anchor="middle" font-size="16" font-weight="bold" fill="#232f3e">オペレーショナルエクセレンス</text>
+        <text x="140" y="90" text-anchor="middle" font-size="14" fill="#666">システムの実行とモニタリング、</text>
+        <text x="140" y="120" text-anchor="middle" font-size="14" fill="#666">プロセスと手順の継続的な改善に</text>
+        <text x="140" y="150" text-anchor="middle" font-size="14" fill="#666">焦点を当てています。</text>
+    </g>
+    
+    <g transform="translate(460,150)">
+        <!-- セキュリティ -->
+        <rect width="280" height="160" rx="10" fill="#E6F3FF"/>
+        <text x="140" y="50" text-anchor="middle" font-size="16" font-weight="bold" fill="#232f3e">セキュリティ</text>
+        <text x="140" y="90" text-anchor="middle" font-size="14" fill="#666">情報とシステムの保護に焦点を</text>
+        <text x="140" y="120" text-anchor="middle" font-size="14" fill="#666">当てています。データの機密性と</text>
+        <text x="140" y="150" text-anchor="middle" font-size="14" fill="#666">完全性を確保します。</text>
+    </g>
+    
+    <g transform="translate(770,150)">
+        <!-- 信頼性 -->
+        <rect width="280" height="160" rx="10" fill="#FFE4E1"/>
+        <text x="140" y="50" text-anchor="middle" font-size="16" font-weight="bold" fill="#232f3e">信頼性</text>
+        <text x="140" y="90" text-anchor="middle" font-size="14" fill="#666">期待通りの機能を実行する</text>
+        <text x="140" y="120" text-anchor="middle" font-size="14" fill="#666">ワークロードと、迅速な回復に</text>
+        <text x="140" y="150" text-anchor="middle" font-size="14" fill="#666">焦点を当てています。</text>
+    </g>
+    
+    <!-- 2行目 -->
+    <g transform="translate(150,340)">
+        <!-- パフォーマンス効率 -->
+        <rect width="280" height="160" rx="10" fill="#E6F3FF"/>
+        <text x="140" y="50" text-anchor="middle" font-size="16" font-weight="bold" fill="#232f3e">パフォーマンス効率</text>
+        <text x="140" y="90" text-anchor="middle" font-size="14" fill="#666">コンピューティングリソースの</text>
+        <text x="140" y="120" text-anchor="middle" font-size="14" fill="#666">構造化および合理化された</text>
+        <text x="140" y="150" text-anchor="middle" font-size="14" fill="#666">割り当てに重点を置いています。</text>
+    </g>
+    
+    <g transform="translate(460,340)">
+        <!-- コスト最適化 -->
+        <rect width="280" height="160" rx="10" fill="#FFE4E1"/>
+        <text x="140" y="50" text-anchor="middle" font-size="16" font-weight="bold" fill="#232f3e">コスト最適化</text>
+        <text x="140" y="90" text-anchor="middle" font-size="14" fill="#666">不要なコストの回避に重点を</text>
+        <text x="140" y="120" text-anchor="middle" font-size="14" fill="#666">置いています。時間の経過による</text>
+        <text x="140" y="150" text-anchor="middle" font-size="14" fill="#666">支出の把握と管理を行います。</text>
+    </g>
+    
+    <g transform="translate(770,340)">
+        <!-- 持続可能性 -->
+        <rect width="280" height="160" rx="10" fill="#E6F3FF"/>
+        <text x="140" y="50" text-anchor="middle" font-size="16" font-weight="bold" fill="#232f3e">持続可能性</text>
+        <text x="140" y="90" text-anchor="middle" font-size="14" fill="#666">環境への影響を最小限に抑える</text>
+        <text x="140" y="120" text-anchor="middle" font-size="14" fill="#666">ことに重点を置いています。</text>
+        <text x="140" y="150" text-anchor="middle" font-size="14" fill="#666">リソースの効率的な利用を図ります。</text>
+    </g>
+</svg> 

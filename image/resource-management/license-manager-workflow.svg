@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600">
+    <!-- 背景 -->
+    <rect width="1200" height="600" fill="#ffffff"/>
+    
+    <!-- タイトル -->
+    <text x="600" y="80" text-anchor="middle" font-size="28" font-weight="bold" fill="#232f3e">License Manager ワークフロー</text>
+    
+    <!-- ステップ1: ライセンス設定 -->
+    <g transform="translate(100,150)">
+        <rect width="250" height="100" rx="10" fill="#FFE4E1"/>
+        <text x="125" y="40" text-anchor="middle" font-size="16" fill="#666">1. ライセンス設定</text>
+        <text x="125" y="70" text-anchor="middle" font-size="14" fill="#666">ルールとポリシーの定義</text>
+    </g>
+    
+    <!-- ステップ2: 追跡と監視 -->
+    <g transform="translate(400,150)">
+        <rect width="250" height="100" rx="10" fill="#527FFF" opacity="0.7"/>
+        <text x="125" y="40" text-anchor="middle" font-size="16" fill="#fff">2. 追跡と監視</text>
+        <text x="125" y="70" text-anchor="middle" font-size="14" fill="#fff">使用状況の自動追跡</text>
+    </g>
+    
+    <!-- ステップ3: レポートと最適化 -->
+    <g transform="translate(700,150)">
+        <rect width="250" height="100" rx="10" fill="#E6F3FF"/>
+        <text x="125" y="40" text-anchor="middle" font-size="16" fill="#666">3. レポートと最適化</text>
+        <text x="125" y="70" text-anchor="middle" font-size="14" fill="#666">分析とコスト最適化</text>
+    </g>
+    
+    <!-- 機能説明 -->
+    <g transform="translate(100,300)">
+        <rect width="850" height="200" rx="10" fill="#f6f8fa"/>
+        <text x="425" y="40" text-anchor="middle" font-size="18" fill="#232f3e">主な機能</text>
+        <text x="50" y="80" font-size="14" fill="#666">・ライセンスルールの設定</text>
+        <text x="50" y="110" font-size="14" fill="#666">・使用状況の追跡</text>
+        <text x="50" y="140" font-size="14" fill="#666">・コンプライアンス違反の検出</text>
+        <text x="50" y="170" font-size="14" fill="#666">・レポート生成</text>
+    </g>
+    
+    <!-- 矢印 -->
+    <g>
+        <path d="M 350,200 L 400,200" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+        <path d="M 650,200 L 700,200" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+    </g>
+    
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+        </marker>
+    </defs>
+</svg> 

@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600">
+    <!-- 背景 -->
+    <rect width="1200" height="600" fill="#ffffff"/>
+    
+    <!-- タイトル -->
+    <text x="600" y="80" text-anchor="middle" font-size="28" font-weight="bold" fill="#232f3e">AWS X-Ray による問題解決</text>
+    
+    <!-- 左側の問題 -->
+    <g transform="translate(100,150)">
+        <rect width="300" height="180" rx="10" fill="#FFE4E1"/>
+        <text x="150" y="50" text-anchor="middle" font-size="16" fill="#666">開発者の悩み</text>
+        <text x="150" y="90" text-anchor="middle" font-size="16" fill="#666">・パフォーマンス低下の原因特定</text>
+        <text x="150" y="130" text-anchor="middle" font-size="16" fill="#666">・サービス間の依存関係が不明確</text>
+        <text x="150" y="170" text-anchor="middle" font-size="16" fill="#666">・エラーの根本原因がわからない</text>
+    </g>
+    
+    <!-- 中央のX-Ray -->
+    <g transform="translate(450,150)">
+        <rect width="300" height="180" rx="10" fill="#527FFF" opacity="0.7"/>
+        <text x="150" y="50" text-anchor="middle" font-size="18" fill="#fff">AWS X-Ray</text>
+        <text x="150" y="90" text-anchor="middle" font-size="16" fill="#fff">・分散トレース</text>
+        <text x="150" y="130" text-anchor="middle" font-size="16" fill="#fff">・サービスマップ</text>
+        <text x="150" y="170" text-anchor="middle" font-size="16" fill="#fff">・パフォーマンス分析</text>
+    </g>
+    
+    <!-- 右側の解決後 -->
+    <g transform="translate(800,150)">
+        <rect width="300" height="180" rx="10" fill="#E6F3FF"/>
+        <text x="150" y="50" text-anchor="middle" font-size="16" fill="#666">問題解決</text>
+        <text x="150" y="90" text-anchor="middle" font-size="16" fill="#666">・ボトルネックの特定</text>
+        <text x="150" y="130" text-anchor="middle" font-size="16" fill="#666">・依存関係の可視化</text>
+        <text x="150" y="170" text-anchor="middle" font-size="16" fill="#666">・迅速なトラブルシューティング</text>
+    </g>
+    
+    <!-- 矢印 -->
+    <g>
+        <path d="M 400,240 L 450,240" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+        <path d="M 750,240 L 800,240" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+    </g>
+    
+    <!-- 下部の説明 -->
+    <g transform="translate(100,400)">
+        <rect width="1000" height="150" rx="10" fill="#f8f9fa"/>
+        <text x="500" y="40" text-anchor="middle" font-size="18" fill="#232f3e">X-Ray の主な機能</text>
+        <text x="200" y="80" text-anchor="middle" font-size="16" fill="#666">1. リクエストの追跡</text>
+        <text x="500" y="80" text-anchor="middle" font-size="16" fill="#666">2. サービス依存関係の可視化</text>
+        <text x="800" y="80" text-anchor="middle" font-size="16" fill="#666">3. パフォーマンスのボトルネック特定</text>
+        <text x="500" y="120" text-anchor="middle" font-size="14" fill="#666">※ アプリケーションにSDKを組み込むだけで簡単に利用可能</text>
+    </g>
+    
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+        </marker>
+    </defs>
+</svg> 

@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600">
+    <!-- 背景 -->
+    <rect width="1200" height="600" fill="#ffffff"/>
+    
+    <!-- タイトル -->
+    <text x="600" y="80" text-anchor="middle" font-size="28" font-weight="bold" fill="#232f3e">Prometheus と Grafana の連携</text>
+    
+    <!-- EC2インスタンス -->
+    <g transform="translate(100,150)">
+        <rect width="200" height="100" rx="10" fill="#FFE4E1"/>
+        <text x="100" y="40" text-anchor="middle" font-size="16" fill="#666">EC2 インスタンス</text>
+        <text x="100" y="70" text-anchor="middle" font-size="14" fill="#666">node_exporter</text>
+    </g>
+    
+    <!-- Prometheus -->
+    <g transform="translate(400,150)">
+        <rect width="300" height="100" rx="10" fill="#527FFF" opacity="0.7"/>
+        <text x="150" y="40" text-anchor="middle" font-size="16" fill="#fff">Amazon Managed Prometheus</text>
+        <text x="150" y="70" text-anchor="middle" font-size="14" fill="#fff">メトリクス収集・保存</text>
+    </g>
+    
+    <!-- Grafana -->
+    <g transform="translate(800,150)">
+        <rect width="300" height="100" rx="10" fill="#E6F3FF"/>
+        <text x="150" y="40" text-anchor="middle" font-size="16" fill="#666">Amazon Managed Grafana</text>
+        <text x="150" y="70" text-anchor="middle" font-size="14" fill="#666">可視化・ダッシュボード</text>
+    </g>
+    
+    <!-- PromQLの例 -->
+    <g transform="translate(100,300)">
+        <rect width="1000" height="250" rx="10" fill="#f6f8fa"/>
+        <text x="50" y="40" font-size="18" fill="#232f3e">PromQL クエリ例</text>
+        
+        <!-- CPU使用率 -->
+        <g transform="translate(50,70)">
+            <text x="0" y="0" font-size="14" fill="#666">CPU使用率:</text>
+            <text x="0" y="25" font-family="monospace" font-size="12" fill="#333">100 - (avg by(instance)(irate(node_cpu_seconds_total{mode="idle"}[5m])) * 100)</text>
+        </g>
+        
+        <!-- メモリ使用率 -->
+        <g transform="translate(50,120)">
+            <text x="0" y="0" font-size="14" fill="#666">メモリ使用率:</text>
+            <text x="0" y="25" font-family="monospace" font-size="12" fill="#333">(node_memory_MemTotal_bytes - node_memory_MemAvailable_bytes) / node_memory_MemTotal_bytes * 100</text>
+        </g>
+    </g>
+    
+    <!-- 矢印 -->
+    <g>
+        <path d="M 300,200 L 400,200" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+        <path d="M 700,200 L 800,200" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+    </g>
+    
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+        </marker>
+    </defs>
+</svg> 

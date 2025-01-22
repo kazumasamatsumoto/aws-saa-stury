@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600">
+    <!-- 背景 -->
+    <rect width="1200" height="600" fill="#ffffff"/>
+    
+    <!-- タイトル -->
+    <text x="600" y="80" text-anchor="middle" font-size="28" font-weight="bold" fill="#232f3e">Amazon Managed Service for Prometheus による課題解決</text>
+    
+    <!-- 左側の問題 -->
+    <g transform="translate(100,150)">
+        <rect width="300" height="180" rx="10" fill="#FFE4E1"/>
+        <text x="150" y="50" text-anchor="middle" font-size="16" fill="#666">Prometheusの課題</text>
+        <text x="150" y="90" text-anchor="middle" font-size="16" fill="#666">・データの永続化が困難</text>
+        <text x="150" y="130" text-anchor="middle" font-size="16" fill="#666">・スケーリングの複雑さ</text>
+        <text x="150" y="170" text-anchor="middle" font-size="16" fill="#666">・高可用性の実現が困難</text>
+    </g>
+    
+    <!-- 中央のAMP -->
+    <g transform="translate(450,150)">
+        <rect width="300" height="180" rx="10" fill="#527FFF" opacity="0.7"/>
+        <text x="150" y="50" text-anchor="middle" font-size="18" fill="#fff">Amazon Managed Prometheus</text>
+        <text x="150" y="90" text-anchor="middle" font-size="16" fill="#fff">・マネージドサービス</text>
+        <text x="150" y="130" text-anchor="middle" font-size="16" fill="#fff">・マルチAZストレージ</text>
+        <text x="150" y="170" text-anchor="middle" font-size="16" fill="#fff">・自動スケーリング</text>
+    </g>
+    
+    <!-- 右側の解決後 -->
+    <g transform="translate(800,150)">
+        <rect width="300" height="180" rx="10" fill="#E6F3FF"/>
+        <text x="150" y="50" text-anchor="middle" font-size="16" fill="#666">実現できること</text>
+        <text x="150" y="90" text-anchor="middle" font-size="16" fill="#666">・信頼性の高い監視</text>
+        <text x="150" y="130" text-anchor="middle" font-size="16" fill="#666">・長期データ保持</text>
+        <text x="150" y="170" text-anchor="middle" font-size="16" fill="#666">・運用負荷の軽減</text>
+    </g>
+    
+    <!-- 矢印 -->
+    <g>
+        <path d="M 400,240 L 450,240" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+        <path d="M 750,240 L 800,240" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+    </g>
+    
+    <!-- 下部の説明 -->
+    <g transform="translate(100,400)">
+        <rect width="1000" height="150" rx="10" fill="#f8f9fa"/>
+        <text x="500" y="40" text-anchor="middle" font-size="18" fill="#232f3e">主な監視対象</text>
+        <text x="200" y="80" text-anchor="middle" font-size="16" fill="#666">Kubernetes</text>
+        <text x="400" y="80" text-anchor="middle" font-size="16" fill="#666">コンテナ</text>
+        <text x="600" y="80" text-anchor="middle" font-size="16" fill="#666">マイクロサービス</text>
+        <text x="800" y="80" text-anchor="middle" font-size="16" fill="#666">カスタムメトリクス</text>
+    </g>
+    
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+        </marker>
+    </defs>
+</svg> 

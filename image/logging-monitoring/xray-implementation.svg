@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600">
+    <!-- 背景 -->
+    <rect width="1200" height="600" fill="#ffffff"/>
+    
+    <!-- タイトル -->
+    <text x="600" y="80" text-anchor="middle" font-size="28" font-weight="bold" fill="#232f3e">X-Ray 実装例</text>
+    
+    <!-- コードブロック背景 -->
+    <g transform="translate(100,120)">
+        <rect width="1000" height="400" rx="10" fill="#f6f8fa"/>
+        
+        <!-- 実装ステップ -->
+        <g transform="translate(50,50)">
+            <!-- SDK初期化 -->
+            <rect width="900" height="80" rx="5" fill="#fff" stroke="#e1e4e8"/>
+            <text x="20" y="30" font-size="16" fill="#666">1. トレースハンドラーの初期化</text>
+            <text x="40" y="60" font-family="monospace" font-size="14" fill="#333">AWSXRay.beginSegment("サービス名");</text>
+        </g>
+        
+        <!-- クライアント設定 -->
+        <g transform="translate(50,150)">
+            <rect width="900" height="80" rx="5" fill="#fff" stroke="#e1e4e8"/>
+            <text x="20" y="30" font-size="16" fill="#666">2. サブセグメントの作成</text>
+            <text x="40" y="60" font-family="monospace" font-size="14" fill="#333">Subsegment subsegment = AWSXRay.beginSubsegment("処理名");</text>
+        </g>
+        
+        <!-- トレース実行 -->
+        <g transform="translate(50,250)">
+            <rect width="900" height="80" rx="5" fill="#fff" stroke="#e1e4e8"/>
+            <text x="20" y="30" font-size="16" fill="#666">3. トレース情報の記録</text>
+            <text x="40" y="60" font-family="monospace" font-size="14" fill="#333">subsegment.putMetadata("key", "value");</text>
+        </g>
+    </g>
+</svg> 

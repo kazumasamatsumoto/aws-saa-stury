@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600">
+    <!-- 背景 -->
+    <rect width="1200" height="600" fill="#ffffff"/>
+    
+    <!-- タイトル -->
+    <text x="600" y="80" text-anchor="middle" font-size="28" font-weight="bold" fill="#232f3e">AWS Systems Manager の概要</text>
+    
+    <!-- 管理対象リソース -->
+    <g transform="translate(100,150)">
+        <rect width="200" height="300" rx="10" fill="#FFE4E1"/>
+        <text x="100" y="40" text-anchor="middle" font-size="16" fill="#666">管理対象リソース</text>
+        <text x="100" y="80" text-anchor="middle" font-size="14" fill="#666">EC2</text>
+        <text x="100" y="120" text-anchor="middle" font-size="14" fill="#666">オンプレミス</text>
+        <text x="100" y="160" text-anchor="middle" font-size="14" fill="#666">IoT</text>
+        <text x="100" y="200" text-anchor="middle" font-size="14" fill="#666">コンテナ</text>
+        <text x="100" y="240" text-anchor="middle" font-size="14" fill="#666">SSM Agent</text>
+    </g>
+    
+    <!-- Systems Manager -->
+    <g transform="translate(400,150)">
+        <rect width="600" height="300" rx="10" fill="#527FFF" opacity="0.7"/>
+        <text x="300" y="40" text-anchor="middle" font-size="18" fill="#fff">AWS Systems Manager</text>
+        
+        <!-- 機能グループ1 -->
+        <g transform="translate(50,80)">
+            <text x="0" y="0" font-size="16" fill="#fff">運用管理</text>
+            <text x="0" y="30" font-size="14" fill="#fff">・Session Manager</text>
+            <text x="0" y="60" font-size="14" fill="#fff">・Run Command</text>
+            <text x="0" y="90" font-size="14" fill="#fff">・State Manager</text>
+        </g>
+        
+        <!-- 機能グループ2 -->
+        <g transform="translate(250,80)">
+            <text x="0" y="0" font-size="16" fill="#fff">自動化</text>
+            <text x="0" y="30" font-size="14" fill="#fff">・Automation</text>
+            <text x="0" y="60" font-size="14" fill="#fff">・Maintenance Windows</text>
+            <text x="0" y="90" font-size="14" fill="#fff">・Patch Manager</text>
+        </g>
+        
+        <!-- 機能グループ3 -->
+        <g transform="translate(450,80)">
+            <text x="0" y="0" font-size="16" fill="#fff">構成管理</text>
+            <text x="0" y="30" font-size="14" fill="#fff">・Parameter Store</text>
+            <text x="0" y="60" font-size="14" fill="#fff">・Inventory</text>
+            <text x="0" y="90" font-size="14" fill="#fff">・OpsCenter</text>
+        </g>
+    </g>
+    
+    <!-- 矢印 -->
+    <g>
+        <path d="M 300,300 L 400,300" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+    </g>
+    
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+        </marker>
+    </defs>
+</svg> 

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600">
+    <!-- 背景 -->
+    <rect width="1200" height="600" fill="#ffffff"/>
+    
+    <!-- タイトル -->
+    <text x="600" y="80" text-anchor="middle" font-size="28" font-weight="bold" fill="#232f3e">Amazon Managed Service for Prometheus アーキテクチャ</text>
+    
+    <!-- メトリクス収集層 -->
+    <g transform="translate(100,150)">
+        <rect width="1000" height="100" rx="10" fill="#FFE4E1"/>
+        <text x="500" y="35" text-anchor="middle" font-size="18" fill="#666">メトリクス収集</text>
+        <text x="200" y="70" text-anchor="middle" font-size="16" fill="#666">Prometheus Exporters</text>
+        <text x="500" y="70" text-anchor="middle" font-size="16" fill="#666">Service Discovery</text>
+        <text x="800" y="70" text-anchor="middle" font-size="16" fill="#666">Remote Write</text>
+    </g>
+    
+    <!-- AMP Workspace -->
+    <g transform="translate(100,300)">
+        <rect width="1000" height="100" rx="10" fill="#527FFF" opacity="0.7"/>
+        <text x="500" y="40" text-anchor="middle" font-size="18" fill="#fff">AMP Workspace</text>
+        <text x="250" y="70" text-anchor="middle" font-size="16" fill="#fff">データ保存</text>
+        <text x="500" y="70" text-anchor="middle" font-size="16" fill="#fff">クエリ処理</text>
+        <text x="750" y="70" text-anchor="middle" font-size="16" fill="#fff">スケーリング</text>
+    </g>
+    
+    <!-- 可視化層 -->
+    <g transform="translate(100,450)">
+        <rect width="1000" height="100" rx="10" fill="#E6F3FF"/>
+        <text x="500" y="40" text-anchor="middle" font-size="18" fill="#666">可視化・分析</text>
+        <text x="250" y="70" text-anchor="middle" font-size="16" fill="#666">Grafana</text>
+        <text x="500" y="70" text-anchor="middle" font-size="16" fill="#666">PromQL</text>
+        <text x="750" y="70" text-anchor="middle" font-size="16" fill="#666">アラート</text>
+    </g>
+    
+    <!-- 接続線 -->
+    <g stroke="#666" stroke-width="2">
+        <path d="M 600,250 L 600,300" marker-end="url(#arrowhead)"/>
+        <path d="M 600,400 L 600,450" marker-end="url(#arrowhead)"/>
+    </g>
+    
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+        </marker>
+    </defs>
+</svg> 

@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600">
+    <!-- 背景 -->
+    <rect width="1200" height="600" fill="#ffffff"/>
+    
+    <!-- タイトル -->
+    <text x="600" y="80" text-anchor="middle" font-size="28" font-weight="bold" fill="#232f3e">AWS License Manager の概要</text>
+    
+    <!-- 左側：ライセンス管理の課題 -->
+    <g transform="translate(100,150)">
+        <rect width="300" height="180" rx="10" fill="#FFE4E1"/>
+        <text x="150" y="50" text-anchor="middle" font-size="16" fill="#666">ライセンス管理の課題</text>
+        <text x="150" y="90" text-anchor="middle" font-size="14" fill="#666">・複数環境での管理の複雑さ</text>
+        <text x="150" y="130" text-anchor="middle" font-size="14" fill="#666">・コンプライアンス違反のリスク</text>
+        <text x="150" y="170" text-anchor="middle" font-size="14" fill="#666">・コストの最適化が困難</text>
+    </g>
+    
+    <!-- 中央：License Manager -->
+    <g transform="translate(450,150)">
+        <rect width="300" height="180" rx="10" fill="#527FFF" opacity="0.7"/>
+        <text x="150" y="50" text-anchor="middle" font-size="18" fill="#fff">AWS License Manager</text>
+        <text x="150" y="90" text-anchor="middle" font-size="14" fill="#fff">・一元管理</text>
+        <text x="150" y="130" text-anchor="middle" font-size="14" fill="#fff">・自動追跡</text>
+        <text x="150" y="170" text-anchor="middle" font-size="14" fill="#fff">・ルール適用</text>
+    </g>
+    
+    <!-- 右側：実現できること -->
+    <g transform="translate(800,150)">
+        <rect width="300" height="180" rx="10" fill="#E6F3FF"/>
+        <text x="150" y="50" text-anchor="middle" font-size="16" fill="#666">実現できること</text>
+        <text x="150" y="90" text-anchor="middle" font-size="14" fill="#666">・コンプライアンス遵守</text>
+        <text x="150" y="130" text-anchor="middle" font-size="14" fill="#666">・コスト最適化</text>
+        <text x="150" y="170" text-anchor="middle" font-size="14" fill="#666">・運用負荷の軽減</text>
+    </g>
+    
+    <!-- 下部：管理対象 -->
+    <g transform="translate(100,380)">
+        <rect width="1000" height="150" rx="10" fill="#f8f9fa"/>
+        <text x="500" y="40" text-anchor="middle" font-size="18" fill="#232f3e">管理対象ライセンス</text>
+        <text x="200" y="80" text-anchor="middle" font-size="14" fill="#666">Windows Server</text>
+        <text x="400" y="80" text-anchor="middle" font-size="14" fill="#666">SQL Server</text>
+        <text x="600" y="80" text-anchor="middle" font-size="14" fill="#666">Oracle Database</text>
+        <text x="800" y="80" text-anchor="middle" font-size="14" fill="#666">その他ソフトウェア</text>
+    </g>
+    
+    <!-- 矢印 -->
+    <g>
+        <path d="M 400,240 L 450,240" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+        <path d="M 750,240 L 800,240" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+    </g>
+    
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+        </marker>
+    </defs>
+</svg> 

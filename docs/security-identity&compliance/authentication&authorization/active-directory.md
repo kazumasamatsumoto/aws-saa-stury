@@ -39,7 +39,7 @@ AWS Managed Microsoft AD は、2 つのドメインコントローラーを異�
 - 自動パッチ適用
 - スケーラブルな構成
 
-![AWS Directory Service Architecture](../../../image/authentication&authorization/directory-service-architecture.svg)
+![AWS Directory Service Architecture](../../../image/security-identity&compliance/authentication&authorization/directory-service-architecture.svg)
 
 ## セットアップと設定
 

@@ -17,7 +17,7 @@ Amazon Cognito は、ウェブアプリケーションやモバイルアプリ�
 
 ## 認証フロー
 
-![Amazon Cognito Authentication Flow](../../../image/authentication&authorization/amazon-cognito-auth-flow.svg)
+![Amazon Cognito Authentication Flow](../../../image/security-identity&compliance/authentication&authorization/amazon-cognito-auth-flow.svg)
 
 ### 認証フローの説明
 
@@ -76,7 +76,7 @@ Amazon Cognito は、ウェブアプリケーションやモバイルアプリ�
 - ソーシャル ID プロバイダー（Google、Facebook）との連携
 - 認証済みユーザーによる S3 バケットへのアクセス
 
-![Cognito Mobile App Scenario](../../../image/authentication&authorization/cognito-mobile-scenario.svg)
+![Cognito Mobile App Scenario](../../../image/security-identity&compliance/authentication&authorization/cognito-mobile-scenario.svg)
 
 **フロー説明**:
 
@@ -94,7 +94,7 @@ Amazon Cognito は、ウェブアプリケーションやモバイルアプリ�
 - MFA を使用した追加のセキュリティ層
 - 認証済みユーザーによる DynamoDB アクセス
 
-![Cognito Web App MFA Scenario](../../../image/authentication&authorization/cognito-web-mfa-scenario.svg)
+![Cognito Web App MFA Scenario](../../../image/security-identity&compliance/authentication&authorization/cognito-web-mfa-scenario.svg)
 
 **フロー説明**:
 

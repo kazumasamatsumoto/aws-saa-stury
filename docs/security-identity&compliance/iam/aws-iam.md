@@ -4,11 +4,11 @@
 
 AWS IAM（Identity and Access Management）は、AWS リソースへのアクセスを安全に管理するためのサービスです。IAM を使用することで、誰が（認証）どのリソースにどのような操作を（認可）できるかを細かく制御することができます。
 
-![AWS-IAMの概要](/image/security-identity&compliance/aws-iam.svg)
+![AWS-IAMの概要](/image/security-identity&compliance/iam/aws-iam.svg)
 
 ## 認証と認可の流れ
 
-![AWS-IAM認証認可フロー](/image/security-identity&compliance/aws-iam-auth-flow.svg)
+![AWS-IAM認証認可フロー](/image/security-identity&compliance/iam/aws-iam-auth-flow.svg)
 
 ### Principal（実行主体）
 
@@ -292,7 +292,7 @@ Permissions Boundary は、IAM エンティティ（ユーザーまたはロー�
 
 1. 認証フロー
 
-   ![スイッチロールの認証フロー](/image/security-identity&compliance/switch-role-flow.svg)
+   ![スイッチロールの認証フロー](/image/security-identity&compliance/iam/switch-role-flow.svg)
 
    1. ユーザーが AWS Management Console でスイッチロールを選択
    2. AWS STS（Security Token Service）が一時的な認証情報を発行
@@ -382,11 +382,11 @@ Permissions Boundary は、IAM エンティティ（ユーザーまたはロー�
 
 AWS STS は、AWS リソースへの一時的なアクセス権限を提供するサービスです。信頼されたユーザーに対して、限定された期間のみ有効な認証情報を発行します。
 
-![AWS-STS概要](/image/security-identity&compliance/aws-sts.svg)
+![AWS-STS概要](/image/security-identity&compliance/iam/aws-sts.svg)
 
 ### 認証フロー
 
-![AWS-STS認証フロー](/image/security-identity&compliance/aws-sts-flow.svg)
+![AWS-STS認証フロー](/image/security-identity&compliance/iam/aws-sts-flow.svg)
 
 1. クライアントが STS にアクセストークンをリクエスト
 2. STS が一時的な認証情報を生成
@@ -497,13 +497,13 @@ AWS STS は、AWS リソースへの一時的なアクセス権限を提供す�
 
 混乱した代理問題は、権限を持つエンティティ（代理）が、意図しない方法で自身の権限を第三者に利用される脆弱性です。
 
-![混乱した代理問題の例](/image/security-identity&compliance/confused-deputy-problem.svg)
+![混乱した代理問題の例](/image/security-identity&compliance/iam/confused-deputy-problem.svg)
 
 ### ソリューション
 
 AWS では、この問題に対して以下の方法で対策が可能です：
 
-![混乱した代理問題の解決策](/image/security-identity&compliance/confused-deputy-solution.svg)
+![混乱した代理問題の解決策](/image/security-identity&compliance/iam/confused-deputy-solution.svg)
 
 1. `aws:SourceArn`と`aws:SourceAccount`条件キーの使用
 

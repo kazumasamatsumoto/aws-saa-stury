@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1000" height="400" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="100%" height="100%" fill="#F7F7F7"/>
+  
+  <!-- アクター -->
+  <g transform="translate(50,50)">
+    <!-- IAMユーザー -->
+    <text x="20" y="30" font-family="Arial" font-size="14" fill="#16191F">IAMユーザー</text>
+    <rect x="0" y="40" width="120" height="300" fill="#FFFFFF" stroke="#545B64" rx="5"/>
+    
+    <!-- AWS Management Console -->
+    <text x="220" y="30" font-family="Arial" font-size="14" fill="#16191F">AWS Management Console</text>
+    <rect x="200" y="40" width="120" height="300" fill="#FFFFFF" stroke="#ED7100" rx="5"/>
+    
+    <!-- AWS STS -->
+    <text x="420" y="30" font-family="Arial" font-size="14" fill="#16191F">AWS STS</text>
+    <rect x="400" y="40" width="120" height="300" fill="#FFFFFF" stroke="#C925D1" rx="5"/>
+    
+    <!-- 新しいロールセッション -->
+    <text x="620" y="30" font-family="Arial" font-size="14" fill="#16191F">新しいロールセッション</text>
+    <rect x="600" y="40" width="120" height="300" fill="#FFFFFF" stroke="#1E8900" rx="5"/>
+    
+    <!-- フロー矢印と説明 -->
+    <!-- 1. ロール切り替えリクエスト -->
+    <line x1="120" y1="100" x2="200" y2="100" stroke="#16191F" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="130" y="85" font-family="Arial" font-size="12" fill="#16191F" font-weight="bold">1. ロール切り替え選択</text>
+    
+    <!-- 2. STS呼び出し -->
+    <line x1="320" y1="150" x2="400" y2="150" stroke="#16191F" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="325" y="135" font-family="Arial" font-size="12" fill="#16191F" font-weight="bold">2. 一時的認証情報のリクエスト</text>
+    
+    <!-- 3. 認証情報返却 -->
+    <line x1="520" y1="200" x2="600" y2="200" stroke="#16191F" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="525" y="185" font-family="Arial" font-size="12" fill="#16191F" font-weight="bold">3. 一時的認証情報の発行</text>
+    
+    <!-- 4. セッション開始 -->
+    <line x1="600" y1="250" x2="320" y2="250" stroke="#16191F" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="400" y="235" font-family="Arial" font-size="12" fill="#16191F" font-weight="bold">4. 新しいロールでセッション開始</text>
+  </g>
+  
+  <!-- 矢印マーカー定義 -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#16191F"/>
+    </marker>
+  </defs>
+</svg> 

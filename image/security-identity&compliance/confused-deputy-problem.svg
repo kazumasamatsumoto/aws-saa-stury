@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="800" height="400" fill="#ffffff"/>
+  
+  <!-- アカウントA（リソース所有者） -->
+  <rect x="50" y="50" width="200" height="150" fill="#FFE4E1" stroke="#000000"/>
+  <text x="150" y="100" text-anchor="middle" font-size="16">アカウントA</text>
+  <rect x="75" y="120" width="150" height="60" fill="#FFA07A" stroke="#000000"/>
+  <text x="150" y="155" text-anchor="middle" font-size="14">S3バケット</text>
+  
+  <!-- アカウントB（サードパーティ） -->
+  <rect x="300" y="50" width="200" height="150" fill="#E6E6FA" stroke="#000000"/>
+  <text x="400" y="100" text-anchor="middle" font-size="16">アカウントB</text>
+  <rect x="325" y="120" width="150" height="60" fill="#9370DB" stroke="#000000"/>
+  <text x="400" y="155" text-anchor="middle" font-size="14">IAMロール</text>
+  
+  <!-- アカウントC（攻撃者） -->
+  <rect x="550" y="50" width="200" height="150" fill="#FFE4E1" stroke="#000000"/>
+  <text x="650" y="100" text-anchor="middle" font-size="16">アカウントC</text>
+  
+  <!-- 矢印と説明 -->
+  <line x1="250" y1="125" x2="325" y2="125" stroke="#000000" marker-end="url(#arrow)"/>
+  <text x="287" y="115" text-anchor="middle" font-size="12">①ロールに権限付与</text>
+  
+  <line x1="650" y1="125" x2="500" y2="125" stroke="#FF0000" stroke-dasharray="5,5" marker-end="url(#arrow)"/>
+  <text x="575" y="115" text-anchor="middle" font-size="12">②不正なリクエスト</text>
+  
+  <line x1="325" y1="150" x2="225" y2="150" stroke="#FF0000" stroke-dasharray="5,5" marker-end="url(#arrow)"/>
+  <text x="275" y="170" text-anchor="middle" font-size="12">③意図しないアクセス</text>
+  
+  <!-- 矢印のマーカー定義 -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#000000"/>
+    </marker>
+  </defs>
+  
+  <!-- 説明テキスト -->
+  <text x="400" y="350" text-anchor="middle" font-size="14" fill="#FF0000">
+    問題：アカウントCが意図しないアクセス権限を取得可能
+  </text>
+</svg> 

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+    <!-- 背景 -->
+    <rect width="800" height="400" fill="#ffffff"/>
+    
+    <!-- Principal -->
+    <g transform="translate(50,180)">
+        <rect width="120" height="60" rx="5" fill="#FF9900"/>
+        <text x="60" y="35" text-anchor="middle" fill="white" font-family="Arial">
+            Principal
+        </text>
+    </g>
+
+    <!-- リクエスト -->
+    <g transform="translate(240,160)">
+        <rect width="140" height="100" rx="5" fill="#232F3E"/>
+        <text x="70" y="35" text-anchor="middle" fill="white" font-family="Arial">
+            リクエスト
+        </text>
+        <text x="70" y="60" text-anchor="middle" fill="white" font-family="Arial" font-size="12">
+            - アクション
+        </text>
+        <text x="70" y="80" text-anchor="middle" fill="white" font-family="Arial" font-size="12">
+            - リソース
+        </text>
+    </g>
+
+    <!-- 認証プロセス -->
+    <g transform="translate(450,100)">
+        <rect width="140" height="80" rx="5" fill="#527FFF"/>
+        <text x="70" y="45" text-anchor="middle" fill="white" font-family="Arial">
+            認証
+        </text>
+    </g>
+
+    <!-- 認可プロセス -->
+    <g transform="translate(450,220)">
+        <rect width="140" height="80" rx="5" fill="#527FFF"/>
+        <text x="70" y="45" text-anchor="middle" fill="white" font-family="Arial">
+            認可
+        </text>
+    </g>
+
+    <!-- AWSリソース -->
+    <g transform="translate(660,180)">
+        <rect width="120" height="60" rx="5" fill="#7AA116"/>
+        <text x="60" y="35" text-anchor="middle" fill="white" font-family="Arial">
+            AWSリソース
+        </text>
+    </g>
+
+    <!-- 矢印 -->
+    <g fill="none" stroke="#666666" stroke-width="2">
+        <!-- Principal → リクエスト -->
+        <path d="M170,210 L240,210"/>
+        <!-- リクエスト → 認証 -->
+        <path d="M380,210 L450,140"/>
+        <!-- 認証 → 認可 -->
+        <path d="M520,180 L520,220"/>
+        <!-- 認可 → AWSリソース -->
+        <path d="M590,260 L660,210"/>
+    </g>
+
+    <!-- 矢印の先端 -->
+    <g fill="#666666">
+        <path d="M240,210 l-8,4 v-8 z"/>
+        <path d="M450,140 l-8,4 v-8 z"/>
+        <path d="M520,220 l4,-8 h-8 z"/>
+        <path d="M660,210 l-8,4 v-8 z"/>
+    </g>
+</svg> 

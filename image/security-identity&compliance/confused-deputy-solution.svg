@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="500" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="800" height="500" fill="#ffffff"/>
+  
+  <!-- アカウントA（リソース所有者） -->
+  <rect x="50" y="50" width="200" height="150" fill="#FFE4E1" stroke="#000000"/>
+  <text x="150" y="100" text-anchor="middle" font-size="16">アカウントA</text>
+  <rect x="75" y="120" width="150" height="60" fill="#FFA07A" stroke="#000000"/>
+  <text x="150" y="155" text-anchor="middle" font-size="14">S3バケット</text>
+  
+  <!-- アカウントB（サードパーティ） -->
+  <rect x="300" y="50" width="200" height="150" fill="#E6E6FA" stroke="#000000"/>
+  <text x="400" y="100" text-anchor="middle" font-size="16">アカウントB</text>
+  <rect x="325" y="120" width="150" height="60" fill="#9370DB" stroke="#000000"/>
+  <text x="400" y="155" text-anchor="middle" font-size="14">IAMロール</text>
+  
+  <!-- アカウントC（攻撃者） -->
+  <rect x="550" y="50" width="200" height="150" fill="#FFE4E1" stroke="#000000"/>
+  <text x="650" y="100" text-anchor="middle" font-size="16">アカウントC</text>
+  
+  <!-- セキュリティ対策 -->
+  <rect x="50" y="250" width="700" height="200" fill="#F0F8FF" stroke="#000000"/>
+  <text x="400" y="280" text-anchor="middle" font-size="16" font-weight="bold">セキュリティ対策</text>
+  
+  <!-- 対策1: External ID -->
+  <rect x="75" y="300" width="300" height="60" fill="#B0E0E6" stroke="#000000"/>
+  <text x="225" y="335" text-anchor="middle" font-size="14">External ID による認証</text>
+  
+  <!-- 対策2: 条件キー -->
+  <rect x="425" y="300" width="300" height="60" fill="#B0E0E6" stroke="#000000"/>
+  <text x="575" y="335" text-anchor="middle" font-size="14">aws:SourceArn/SourceAccount</text>
+  
+  <!-- 矢印と説明 -->
+  <line x1="550" y1="150" x2="450" y2="150" stroke="#000000" marker-end="url(#arrow)"/>
+  <text x="500" y="140" text-anchor="middle" font-size="12">リクエスト</text>
+  
+  <!-- チェックマーク -->
+  <text x="225" y="400" text-anchor="middle" font-size="14" fill="#008000">✓ 一意の識別子で認証</text>
+  <text x="575" y="400" text-anchor="middle" font-size="14" fill="#008000">✓ アクセス元を制限</text>
+  
+  <!-- 矢印のマーカー定義 -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#000000"/>
+    </marker>
+  </defs>
+  
+  <!-- 説明テキスト -->
+  <text x="400" y="470" text-anchor="middle" font-size="14" fill="#008000">
+    解決策：複数の認証層による不正アクセスの防止
+  </text>
+</svg> 

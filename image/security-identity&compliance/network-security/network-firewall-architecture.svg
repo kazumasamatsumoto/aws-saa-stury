@@ -1,0 +1,50 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+    <!-- 背景とグリッド -->
+    <rect width="800" height="600" fill="#f0f9ff"/>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+        <path d="M 20 0 L 0 0 0 20" fill="none" stroke="black" stroke-width="0.5" opacity="0.1"/>
+    </pattern>
+    <rect width="800" height="600" fill="url(#grid)"/>
+
+    <!-- AWS Cloud 境界 -->
+    <rect x="250" y="50" width="500" height="500" fill="none" stroke="#2c5282" stroke-width="2" stroke-dasharray="5,5"/>
+    <text x="270" y="80" font-family="Arial" font-size="14" fill="#2c5282">AWS Cloud</text>
+
+    <!-- VPC 境界 -->
+    <rect x="500" y="100" width="200" height="400" fill="none" stroke="#2c5282" stroke-width="2"/>
+    <text x="520" y="130" font-family="Arial" font-size="14">VPC</text>
+
+    <!-- AWS Network Firewall -->
+    <rect x="300" y="250" width="150" height="80" fill="white" stroke="#2c5282" stroke-width="2"/>
+    <text x="375" y="290" text-anchor="middle" font-family="Arial" font-size="14">AWS Network</text>
+    <text x="375" y="310" text-anchor="middle" font-family="Arial" font-size="14">Firewall</text>
+
+    <!-- インターネット -->
+    <rect x="50" y="250" width="150" height="80" fill="white" stroke="#2c5282" stroke-width="2"/>
+    <text x="125" y="295" text-anchor="middle" font-family="Arial" font-size="14">Internet</text>
+
+    <!-- EC2インスタンス -->
+    <rect x="525" y="250" width="150" height="80" fill="white" stroke="#2c5282" stroke-width="2"/>
+    <text x="600" y="295" text-anchor="middle" font-family="Arial" font-size="14">EC2 Instances</text>
+
+    <!-- 接続線と説明 -->
+    <line x1="200" y1="290" x2="300" y2="290" stroke="#3182ce" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <line x1="450" y1="290" x2="525" y2="290" stroke="#3182ce" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+    <!-- 矢印マーカー -->
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#3182ce"/>
+        </marker>
+    </defs>
+
+    <!-- 説明テキスト -->
+    <text x="400" y="40" text-anchor="middle" font-family="Arial" font-size="16" fill="#4a5568">AWS Network Firewall Architecture</text>
+    
+    <!-- フロー説明 -->
+    <text x="200" y="270" font-family="Arial" font-size="12" fill="#4a5568">1. インバウンド</text>
+    <text x="200" y="320" font-family="Arial" font-size="12" fill="#4a5568">トラフィック</text>
+    
+    <text x="460" y="270" font-family="Arial" font-size="12" fill="#4a5568">2. 検査済み</text>
+    <text x="460" y="320" font-family="Arial" font-size="12" fill="#4a5568">トラフィック</text>
+</svg> 

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+    <!-- 背景 -->
+    <rect width="800" height="600" fill="#f0f9ff"/>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+        <path d="M 20 0 L 0 0 0 20" fill="none" stroke="black" stroke-width="0.5" opacity="0.1"/>
+    </pattern>
+    <rect width="800" height="600" fill="url(#grid)"/>
+
+    <!-- トラフィックソース -->
+    <g transform="translate(30,400)">
+        <rect width="200" height="80" fill="#ff6b6b" stroke="#c53030" stroke-width="2" rx="5"/>
+        <text x="100" y="45" text-anchor="middle" font-family="Arial" font-size="14">DDoS攻撃トラフィック</text>
+    </g>
+
+    <g transform="translate(530,400)">
+        <rect width="200" height="80" fill="#68d391" stroke="#2f855a" stroke-width="2" rx="5"/>
+        <text x="100" y="45" text-anchor="middle" font-family="Arial" font-size="14">正常トラフィック</text>
+    </g>
+
+    <!-- AWS Shield -->
+    <g transform="translate(280,250)">
+        <rect width="200" height="80" fill="#ffffff" stroke="#2c5282" stroke-width="2" rx="5"/>
+        <text x="100" y="45" text-anchor="middle" font-family="Arial" font-size="14">AWS Shield</text>
+    </g>
+
+    <!-- 保護対象サービス -->
+    <g transform="translate(30,100)">
+        <rect width="150" height="80" fill="#ffffff" stroke="#2c5282" stroke-width="2" rx="5"/>
+        <text x="75" y="45" text-anchor="middle" font-family="Arial" font-size="14">CloudFront</text>
+    </g>
+
+    <g transform="translate(230,100)">
+        <rect width="150" height="80" fill="#ffffff" stroke="#2c5282" stroke-width="2" rx="5"/>
+        <text x="75" y="45" text-anchor="middle" font-family="Arial" font-size="14">Route 53</text>
+    </g>
+
+    <g transform="translate(430,100)">
+        <rect width="150" height="80" fill="#ffffff" stroke="#2c5282" stroke-width="2" rx="5"/>
+        <text x="75" y="45" text-anchor="middle" font-family="Arial" font-size="14">ELB</text>
+    </g>
+
+    <g transform="translate(630,100)">
+        <rect width="150" height="80" fill="#ffffff" stroke="#2c5282" stroke-width="2" rx="5"/>
+        <text x="75" y="45" text-anchor="middle" font-family="Arial" font-size="14">Global Accelerator</text>
+    </g>
+
+    <!-- 接続線 -->
+    <!-- 攻撃トラフィックの経路 -->
+    <path d="M 130 400 L 130 290 L 280 290" stroke="#c53030" stroke-width="2" fill="none"/>
+    <text x="180" y="270" font-family="Arial" font-size="12" fill="#c53030">ブロック</text>
+
+    <!-- 正常トラフィックの経路 -->
+    <path d="M 630 400 L 630 290 L 480 290" stroke="#2f855a" stroke-width="2" fill="none"/>
+    <path d="M 380 250 L 380 200 L 105 200 L 105 180" stroke="#2f855a" stroke-width="2" fill="none"/>
+    <path d="M 380 250 L 380 200 L 305 200 L 305 180" stroke="#2f855a" stroke-width="2" fill="none"/>
+    <path d="M 380 250 L 380 200 L 505 200 L 505 180" stroke="#2f855a" stroke-width="2" fill="none"/>
+    <path d="M 380 250 L 380 200 L 705 200 L 705 180" stroke="#2f855a" stroke-width="2" fill="none"/>
+    <text x="530" y="270" font-family="Arial" font-size="12" fill="#2f855a">許可</text>
+</svg> 

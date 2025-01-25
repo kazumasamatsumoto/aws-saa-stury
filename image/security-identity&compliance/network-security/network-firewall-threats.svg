@@ -1,0 +1,56 @@
+ <svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+    <!-- 背景とグリッド -->
+    <rect width="800" height="600" fill="#f0f9ff"/>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+        <path d="M 20 0 L 0 0 0 20" fill="none" stroke="black" stroke-width="0.5" opacity="0.1"/>
+    </pattern>
+    <rect width="800" height="600" fill="url(#grid)"/>
+
+    <!-- AWS Network Firewall -->
+    <rect x="300" y="200" width="200" height="200" fill="white" stroke="#2c5282" stroke-width="2"/>
+    <text x="400" y="230" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">AWS Network Firewall</text>
+
+    <!-- 脅威アイコン（左側） -->
+    <g transform="translate(50,150)">
+        <rect width="150" height="300" fill="white" stroke="#dc2626" stroke-width="2"/>
+        <text x="75" y="30" text-anchor="middle" font-family="Arial" font-size="12" fill="#dc2626">脅威</text>
+        <text x="75" y="60" text-anchor="middle" font-family="Arial" font-size="11">DDoS攻撃</text>
+        <text x="75" y="90" text-anchor="middle" font-family="Arial" font-size="11">SQLインジェクション</text>
+        <text x="75" y="120" text-anchor="middle" font-family="Arial" font-size="11">マルウェア</text>
+        <text x="75" y="150" text-anchor="middle" font-family="Arial" font-size="11">ボットネット</text>
+        <text x="75" y="180" text-anchor="middle" font-family="Arial" font-size="11">XSS攻撃</text>
+    </g>
+
+    <!-- 保護されたリソース（右側） -->
+    <g transform="translate(600,150)">
+        <rect width="150" height="300" fill="white" stroke="#059669" stroke-width="2"/>
+        <text x="75" y="30" text-anchor="middle" font-family="Arial" font-size="12" fill="#059669">保護されたVPC</text>
+        <rect x="25" y="60" width="100" height="40" fill="white" stroke="#059669" stroke-width="1"/>
+        <text x="75" y="85" text-anchor="middle" font-family="Arial" font-size="11">EC2</text>
+        <rect x="25" y="120" width="100" height="40" fill="white" stroke="#059669" stroke-width="1"/>
+        <text x="75" y="145" text-anchor="middle" font-family="Arial" font-size="11">RDS</text>
+    </g>
+
+    <!-- 防御アクション -->
+    <g transform="translate(300,220)">
+        <text x="100" y="40" text-anchor="middle" font-family="Arial" font-size="11">トラフィック検査</text>
+        <text x="100" y="70" text-anchor="middle" font-family="Arial" font-size="11">パケットフィルタリング</text>
+        <text x="100" y="100" text-anchor="middle" font-family="Arial" font-size="11">IDS/IPS</text>
+        <text x="100" y="130" text-anchor="middle" font-family="Arial" font-size="11">プロトコル検証</text>
+    </g>
+
+    <!-- 矢印 -->
+    <defs>
+        <marker id="redArrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#dc2626"/>
+        </marker>
+        <marker id="greenArrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#059669"/>
+        </marker>
+    </defs>
+
+    <!-- 攻撃の矢印 -->
+    <line x1="200" y1="300" x2="300" y2="300" stroke="#dc2626" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#redArrow)"/>
+    <!-- 保護された通信の矢印 -->
+    <line x1="500" y1="300" x2="600" y2="300" stroke="#059669" stroke-width="2" marker-end="url(#greenArrow)"/>
+</svg> 

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="800" xmlns="http://www.w3.org/2000/svg">
+    <!-- 背景 -->
+    <rect width="800" height="700" fill="#f8f9fa"/>
+    
+    <!-- タイトル -->
+    <text x="400" y="50" text-anchor="middle" font-size="24" font-weight="bold" fill="#2c3e50">AWS Certificate Manager</text>
+    
+    <!-- 主な特徴 -->
+    <g id="features" transform="translate(50, 100)">
+        <text x="0" y="0" font-size="14" fill="#2c3e50" font-weight="bold">主な特徴：</text>
+        <text x="0" y="25" font-size="12" fill="#666">・証明書の自動管理</text>
+        <text x="0" y="45" font-size="12" fill="#666">・AWS サービスとの統合</text>
+        <text x="0" y="65" font-size="12" fill="#666">・パブリック証明書は無料</text>
+        <text x="0" y="85" font-size="12" fill="#666">・プライベートキーの安全管理</text>
+    </g>
+    
+    <!-- 暗号化ポイント -->
+    <g id="encryption-points" transform="translate(570, 100)">
+        <text x="0" y="0" font-size="14" fill="#2c3e50" font-weight="bold">暗号化ポイント：</text>
+        <text x="0" y="25" font-size="12" fill="#666">・クライアント → ELB (SSL終端)</text>
+        <text x="0" y="45" font-size="12" fill="#666">・ELB → バックエンド (追加暗号化)</text>
+    </g>
+    
+    <!-- 中央のACMアイコン -->
+    <rect x="300" y="250" width="200" height="100" rx="10" fill="#4db6ac" stroke="#3b9b91" stroke-width="2"/>
+    <text x="400" y="310" text-anchor="middle" fill="white" font-weight="bold">ACM</text>
+    
+    <!-- 利用シナリオ -->
+    <g id="use-cases">
+        <!-- Web アプリケーション -->
+        <rect x="50" y="150" width="180" height="60" rx="5" fill="#81c784" stroke="#66bb6a" stroke-width="2"/>
+        <text x="140" y="185" text-anchor="middle" dominant-baseline="middle" fill="white" font-weight="bold">Web アプリケーション</text>
+        
+        <!-- 内部通信 -->
+        <rect x="50" y="270" width="180" height="60" rx="5" fill="#81c784" stroke="#66bb6a" stroke-width="2"/>
+        <text x="140" y="300" text-anchor="middle" dominant-baseline="middle" fill="white" font-weight="bold">内部通信</text>
+        
+        <!-- API -->
+        <rect x="50" y="390" width="180" height="60" rx="5" fill="#81c784" stroke="#66bb6a" stroke-width="2"/>
+        <text x="140" y="420" text-anchor="middle" dominant-baseline="middle" fill="white" font-weight="bold">API</text>
+    </g>
+    
+    <!-- 証明書タイプ -->
+    <g id="certificate-types">
+        <!-- パブリック証明書 -->
+        <rect x="570" y="200" width="180" height="100" rx="5" fill="#64b5f6" stroke="#42a5f5" stroke-width="2"/>
+        <text x="660" y="230" text-anchor="middle" fill="white" font-weight="bold">パブリック証明書</text>
+        <text x="660" y="250" text-anchor="middle" fill="white" font-size="12">・ドメイン認証(DV)対応</text>
+        <text x="660" y="265" text-anchor="middle" fill="white" font-size="12">・無料発行可能</text>
+        <text x="660" y="280" text-anchor="middle" fill="white" font-size="12">・自動更新対応</text>
+        
+        <!-- プライベート証明書 -->
+        <rect x="570" y="340" width="180" height="100" rx="5" fill="#64b5f6" stroke="#42a5f5" stroke-width="2"/>
+        <text x="660" y="370" text-anchor="middle" fill="white" font-weight="bold">プライベート証明書</text>
+        <text x="660" y="390" text-anchor="middle" fill="white" font-size="12">・プライベートCA機能</text>
+        <text x="660" y="405" text-anchor="middle" fill="white" font-size="12">・有料サービス</text>
+    </g>
+    
+    <!-- 外部証明書 -->
+    <g id="external-certificates" transform="translate(570, 480)">
+        <rect x="0" y="0" width="180" height="100" rx="5" fill="#ff9800" stroke="#f57c00" stroke-width="2"/>
+        <text x="90" y="30" text-anchor="middle" fill="white" font-weight="bold">外部証明書</text>
+        <text x="90" y="50" text-anchor="middle" fill="white" font-size="12">・EV/OV証明書対応</text>
+        <text x="90" y="65" text-anchor="middle" fill="white" font-size="12">・手動インポート</text>
+        <text x="90" y="80" text-anchor="middle" fill="white" font-size="12">・手動更新必要</text>
+    </g>
+    
+    <!-- 接続線 -->
+    <g id="connections" stroke="#90a4ae" stroke-width="2" fill="none">
+        <!-- CloudFront to ACM -->
+        <path d="M230,180 H270 V280 H300"/>
+        
+        <!-- ELB to ACM -->
+        <path d="M230,300 H300"/>
+        
+        <!-- API Gateway to ACM -->
+        <path d="M230,420 H270 V320 H300"/>
+        
+        <!-- ACM to パブリック証明書 -->
+        <path d="M500,280 H540 V230 H570"/>
+        
+        <!-- ACM to プライベート証明書 -->
+        <path d="M500,320 H540 V370 H570"/>
+    </g>
+    
+    <!-- 接続線の説明テキスト -->
+    <g id="connection-labels">
+        <!-- CloudFront to ACM -->
+        <text x="275" y="160" font-size="12" fill="#666" text-anchor="middle">証明書の適用</text>
+        
+        <!-- ELB to ACM -->
+        <text x="265" y="280" font-size="12" fill="#666" text-anchor="middle">証明書の適用</text>
+        
+        <!-- API Gateway to ACM -->
+        <text x="275" y="400" font-size="12" fill="#666" text-anchor="middle">証明書の適用</text>
+        
+        <!-- ACM to パブリック証明書 -->
+        <text x="535" y="210" font-size="12" fill="#666" text-anchor="middle">発行・管理</text>
+        
+        <!-- ACM to プライベート証明書 -->
+        <text x="535" y="350" font-size="12" fill="#666" text-anchor="middle">発行・管理</text>
+    </g>
+    
+    <!-- 凡例 -->
+    <g id="legend" transform="translate(50, 520)">
+        <text x="0" y="0" font-size="14" fill="#2c3e50" font-weight="bold">関係性の説明：</text>
+        <text x="0" y="30" font-size="12" fill="#666">・証明書の適用: AWS サービスへの SSL/TLS 証明書の適用</text>
+        <text x="0" y="55" font-size="12" fill="#666">・発行・管理: 証明書の発行、更新、失効などの管理機能</text>
+    </g>
+    
+    <!-- ベストプラクティス -->
+    <g id="best-practices" transform="translate(50, 600)">
+        <text x="0" y="0" font-size="14" fill="#2c3e50" font-weight="bold">ベストプラクティス：</text>
+        <text x="0" y="25" font-size="12" fill="#666">・証明書の有効期限監視</text>
+        <text x="0" y="45" font-size="12" fill="#666">・ドメイン検証の適切な実施</text>
+        <text x="0" y="65" font-size="12" fill="#666">・証明書更新の自動化活用</text>
+        <text x="0" y="85" font-size="12" fill="#666">・証明書のインベントリ管理</text>
+    </g>
+</svg> 

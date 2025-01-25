@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- メインタイトル -->
+  <text x="400" y="50" text-anchor="middle" font-size="24" font-weight="bold" fill="#232f3e">
+    AWS Serverless Application Repository
+  </text>
+
+  <!-- 中央のメインコンポーネント -->
+  <rect x="300" y="100" width="200" height="80" rx="10" fill="#ff9900" opacity="0.8"/>
+  <text x="400" y="145" text-anchor="middle" fill="white" font-weight="bold">
+    アプリケーション
+  </text>
+  <text x="400" y="165" text-anchor="middle" fill="white" font-size="12">
+    SAMテンプレート
+  </text>
+
+  <!-- 左側の機能グループ -->
+  <g transform="translate(100,250)">
+    <rect width="180" height="200" rx="10" fill="#527fff" opacity="0.8"/>
+    <text x="90" y="30" text-anchor="middle" fill="white" font-weight="bold">開発者の機能</text>
+    <text x="90" y="60" text-anchor="middle" fill="white" font-size="12">アプリの公開</text>
+    <text x="90" y="90" text-anchor="middle" fill="white" font-size="12">バージョン管理</text>
+    <text x="90" y="120" text-anchor="middle" fill="white" font-size="12">アクセス制御</text>
+    <text x="90" y="150" text-anchor="middle" fill="white" font-size="12">コード共有</text>
+  </g>
+
+  <!-- 右側の機能グループ -->
+  <g transform="translate(520,250)">
+    <rect width="180" height="200" rx="10" fill="#527fff" opacity="0.8"/>
+    <text x="90" y="30" text-anchor="middle" fill="white" font-weight="bold">利用者の機能</text>
+    <text x="90" y="60" text-anchor="middle" fill="white" font-size="12">アプリの検索</text>
+    <text x="90" y="90" text-anchor="middle" fill="white" font-size="12">ワンクリックデプロイ</text>
+    <text x="90" y="120" text-anchor="middle" fill="white" font-size="12">自動スケーリング</text>
+    <text x="90" y="150" text-anchor="middle" fill="white" font-size="12">サーバーレス実行</text>
+  </g>
+
+  <!-- 下部の利点 -->
+  <g transform="translate(200,500)">
+    <rect width="400" height="60" rx="10" fill="#16191f" opacity="0.8"/>
+    <text x="200" y="25" text-anchor="middle" fill="white" font-size="14" font-weight="bold">主な利点</text>
+    <text x="200" y="45" text-anchor="middle" fill="white" font-size="12">
+      開発効率化・ベストプラクティス共有・コスト最適化
+    </text>
+  </g>
+
+  <!-- 接続線 -->
+  <path d="M400 180 L400 250" stroke="#666" stroke-width="2" fill="none"/>
+  <path d="M400 250 L280 350" stroke="#666" stroke-width="2" fill="none"/>
+  <path d="M400 250 L520 350" stroke="#666" stroke-width="2" fill="none"/>
+</svg>

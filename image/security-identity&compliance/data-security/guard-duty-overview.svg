@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="700" xmlns="http://www.w3.org/2000/svg">
+    <!-- 背景 -->
+    <rect width="800" height="700" fill="#ffffff"/>
+    
+    <!-- GuardDuty本体 -->
+    <rect x="300" y="250" width="200" height="100" fill="#67B8DE" stroke="#2E6B87" stroke-width="2" rx="5"/>
+    <text x="400" y="285" text-anchor="middle" fill="#333333" font-family="Arial" font-size="16">Amazon GuardDuty</text>
+    <text x="400" y="310" text-anchor="middle" fill="#333333" font-family="Arial" font-size="12">インテリジェントな</text>
+    <text x="400" y="330" text-anchor="middle" fill="#333333" font-family="Arial" font-size="12">脅威検出サービス</text>
+    
+    <!-- 入力ソース -->
+    <rect x="50" y="150" width="150" height="80" fill="#A7D5A3" stroke="#458B41" stroke-width="2" rx="5"/>
+    <text x="125" y="180" text-anchor="middle" fill="#333333" font-family="Arial" font-size="14">VPCフローログ</text>
+    <text x="125" y="200" text-anchor="middle" fill="#333333" font-family="Arial" font-size="11">ネットワークトラフィック</text>
+    <text x="125" y="215" text-anchor="middle" fill="#333333" font-family="Arial" font-size="11">の監視</text>
+    
+    <rect x="50" y="250" width="150" height="80" fill="#A7D5A3" stroke="#458B41" stroke-width="2" rx="5"/>
+    <text x="125" y="280" text-anchor="middle" fill="#333333" font-family="Arial" font-size="14">CloudTrailログ</text>
+    <text x="125" y="300" text-anchor="middle" fill="#333333" font-family="Arial" font-size="11">APIアクティビティの</text>
+    <text x="125" y="315" text-anchor="middle" fill="#333333" font-family="Arial" font-size="11">監視</text>
+    
+    <rect x="50" y="350" width="150" height="80" fill="#A7D5A3" stroke="#458B41" stroke-width="2" rx="5"/>
+    <text x="125" y="380" text-anchor="middle" fill="#333333" font-family="Arial" font-size="14">DNSログ</text>
+    <text x="125" y="400" text-anchor="middle" fill="#333333" font-family="Arial" font-size="11">DNS要求の分析と</text>
+    <text x="125" y="415" text-anchor="middle" fill="#333333" font-family="Arial" font-size="11">異常検知</text>
+    
+    <!-- 出力先 -->
+    <rect x="600" y="150" width="150" height="80" fill="#F4B183" stroke="#C55A11" stroke-width="2" rx="5"/>
+    <text x="675" y="180" text-anchor="middle" fill="#333333" font-family="Arial" font-size="14">EventBridge</text>
+    <text x="675" y="200" text-anchor="middle" fill="#333333" font-family="Arial" font-size="11">イベント検出時の</text>
+    <text x="675" y="215" text-anchor="middle" fill="#333333" font-family="Arial" font-size="11">自動アクション実行</text>
+    
+    <rect x="600" y="250" width="150" height="80" fill="#F4B183" stroke="#C55A11" stroke-width="2" rx="5"/>
+    <text x="675" y="280" text-anchor="middle" fill="#333333" font-family="Arial" font-size="14">Security Hub</text>
+    <text x="675" y="300" text-anchor="middle" fill="#333333" font-family="Arial" font-size="11">セキュリティ状態の</text>
+    <text x="675" y="315" text-anchor="middle" fill="#333333" font-family="Arial" font-size="11">一元管理</text>
+    
+    <rect x="600" y="350" width="150" height="80" fill="#F4B183" stroke="#C55A11" stroke-width="2" rx="5"/>
+    <text x="675" y="380" text-anchor="middle" fill="#333333" font-family="Arial" font-size="14">Lambda</text>
+    <text x="675" y="400" text-anchor="middle" fill="#333333" font-family="Arial" font-size="11">検出時の自動修復</text>
+    <text x="675" y="415" text-anchor="middle" fill="#333333" font-family="Arial" font-size="11">プロセスの実行</text>
+    
+    <!-- 接続線 -->
+    <!-- 入力ソースからGuardDutyへ -->
+    <path d="M200 190 H250 V300 H300" fill="none" stroke="#666666" stroke-width="2"/>
+    <path d="M200 290 H300" fill="none" stroke="#666666" stroke-width="2"/>
+    <path d="M200 390 H250 V300 H300" fill="none" stroke="#666666" stroke-width="2"/>
+    
+    <!-- GuardDutyから出力先へ -->
+    <path d="M500 300 H550 V190 H600" fill="none" stroke="#666666" stroke-width="2"/>
+    <path d="M500 300 H600" fill="none" stroke="#666666" stroke-width="2"/>
+    <path d="M500 300 H550 V390 H600" fill="none" stroke="#666666" stroke-width="2"/>
+</svg> 

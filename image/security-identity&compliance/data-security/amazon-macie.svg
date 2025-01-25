@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+    <!-- 背景色を設定 -->
+    <rect width="100%" height="100%" fill="#f8f9fa"/>
+    
+    <!-- Amazon Macie -->
+    <rect x="350" y="50" width="150" height="80" fill="#e1f3ff" stroke="#0073bb" stroke-width="2" rx="5"/>
+    <text x="425" y="95" font-family="Arial" font-size="14" text-anchor="middle">Amazon Macie</text>
+    
+    <!-- S3 Buckets -->
+    <rect x="100" y="250" width="120" height="60" fill="#ffd8e1" stroke="#d13212" stroke-width="2" rx="5"/>
+    <text x="160" y="285" font-family="Arial" font-size="14" text-anchor="middle">S3 Buckets</text>
+    
+    <!-- Security Hub -->
+    <rect x="350" y="250" width="120" height="60" fill="#d1f7d1" stroke="#156b15" stroke-width="2" rx="5"/>
+    <text x="410" y="285" font-family="Arial" font-size="14" text-anchor="middle">Security Hub</text>
+    
+    <!-- EventBridge -->
+    <rect x="600" y="250" width="120" height="60" fill="#e1d1f7" stroke="#4d1f87" stroke-width="2" rx="5"/>
+    <text x="660" y="285" font-family="Arial" font-size="14" text-anchor="middle">EventBridge</text>
+    
+    <!-- Security Team -->
+    <rect x="350" y="450" width="120" height="60" fill="#fff3d1" stroke="#876a1f" stroke-width="2" rx="5"/>
+    <text x="410" y="485" font-family="Arial" font-size="14" text-anchor="middle">Security Team</text>
+    
+    <!-- 接続線 -->
+    <!-- Macie to S3 -->
+    <path d="M 350 90 L 160 90 L 160 250" fill="none" stroke="#666" stroke-width="2"/>
+    <text x="200" y="80" font-family="Arial" font-size="12">スキャン</text>
+    
+    <!-- Macie to Security Hub -->
+    <path d="M 425 130 L 425 250" fill="none" stroke="#666" stroke-width="2"/>
+    <text x="440" y="190" font-family="Arial" font-size="12">結果の統合</text>
+    
+    <!-- Macie to EventBridge -->
+    <path d="M 500 90 L 660 90 L 660 250" fill="none" stroke="#666" stroke-width="2"/>
+    <text x="600" y="80" font-family="Arial" font-size="12">イベント通知</text>
+    
+    <!-- Security Hub to Team -->
+    <path d="M 410 310 L 410 450" fill="none" stroke="#666" stroke-width="2"/>
+    <text x="425" y="380" font-family="Arial" font-size="12">アラート</text>
+    
+    <!-- EventBridge to Team -->
+    <path d="M 660 310 L 660 480 L 470 480" fill="none" stroke="#666" stroke-width="2"/>
+    <text x="550" y="470" font-family="Arial" font-size="12">自動通知</text>
+</svg> 

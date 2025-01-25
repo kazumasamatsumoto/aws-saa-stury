@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景色を設定 -->
+  <rect width="100%" height="100%" fill="#f8f9fa"/>
+  
+  <!-- データソース -->
+  <g transform="translate(50,50)">
+    <rect x="0" y="0" width="180" height="80" fill="#e3f2fd" stroke="#2196f3" stroke-width="2" rx="5"/>
+    <text x="90" y="45" text-anchor="middle" font-family="Arial" font-size="14">AWS CloudTrail Logs</text>
+  </g>
+  
+  <g transform="translate(50,150)">
+    <rect x="0" y="0" width="180" height="80" fill="#e3f2fd" stroke="#2196f3" stroke-width="2" rx="5"/>
+    <text x="90" y="45" text-anchor="middle" font-family="Arial" font-size="14">VPC Flow Logs</text>
+  </g>
+  
+  <g transform="translate(50,250)">
+    <rect x="0" y="0" width="180" height="80" fill="#e3f2fd" stroke="#2196f3" stroke-width="2" rx="5"/>
+    <text x="90" y="45" text-anchor="middle" font-family="Arial" font-size="14">GuardDuty Findings</text>
+  </g>
+  
+  <!-- Amazon Detective Core -->
+  <g transform="translate(300,150)">
+    <rect x="0" y="0" width="200" height="120" fill="#bbdefb" stroke="#1976d2" stroke-width="2" rx="5"/>
+    <text x="100" y="50" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">Amazon Detective</text>
+    <text x="100" y="70" text-anchor="middle" font-family="Arial" font-size="12">機械学習による分析</text>
+    <text x="100" y="90" text-anchor="middle" font-family="Arial" font-size="12">行動グラフ生成</text>
+  </g>
+  
+  <!-- 出力/結果 -->
+  <g transform="translate(570,50)">
+    <rect x="0" y="0" width="180" height="80" fill="#e8f5e9" stroke="#4caf50" stroke-width="2" rx="5"/>
+    <text x="90" y="45" text-anchor="middle" font-family="Arial" font-size="14">可視化ダッシュボード</text>
+  </g>
+  
+  <g transform="translate(570,150)">
+    <rect x="0" y="0" width="180" height="80" fill="#e8f5e9" stroke="#4caf50" stroke-width="2" rx="5"/>
+    <text x="90" y="45" text-anchor="middle" font-family="Arial" font-size="14">インタラクティブグラフ</text>
+  </g>
+  
+  <g transform="translate(570,250)">
+    <rect x="0" y="0" width="180" height="80" fill="#e8f5e9" stroke="#4caf50" stroke-width="2" rx="5"/>
+    <text x="90" y="45" text-anchor="middle" font-family="Arial" font-size="14">調査レポート</text>
+  </g>
+  
+  <!-- 接続線 -->
+  <!-- データソースからDetectiveへの接続 -->
+  <path d="M230,90 H270 V210 H300" fill="none" stroke="#90caf9" stroke-width="2"/>
+  <path d="M230,190 H300" fill="none" stroke="#90caf9" stroke-width="2"/>
+  <path d="M230,290 H270 V210 H300" fill="none" stroke="#90caf9" stroke-width="2"/>
+  
+  <!-- DetectiveからOutputへの接続 -->
+  <path d="M500,210 H530 V90 H570" fill="none" stroke="#a5d6a7" stroke-width="2"/>
+  <path d="M500,210 H570" fill="none" stroke="#a5d6a7" stroke-width="2"/>
+  <path d="M500,210 H530 V290 H570" fill="none" stroke="#a5d6a7" stroke-width="2"/>
+  
+  <!-- 関係性の説明テキスト -->
+  <g transform="translate(230,30)">
+    <text x="0" y="0" font-family="Arial" font-size="12" fill="#666">データ収集</text>
+  </g>
+  
+  <g transform="translate(530,30)">
+    <text x="0" y="0" font-family="Arial" font-size="12" fill="#666">分析結果の出力</text>
+  </g>
+</svg>

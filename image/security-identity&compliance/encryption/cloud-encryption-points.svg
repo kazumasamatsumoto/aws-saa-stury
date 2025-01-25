@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="800" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .title { font: bold 24px sans-serif; fill: #2C3E50; }
+        .subtitle { font: bold 18px sans-serif; fill: #34495E; }
+        .text { font: 14px sans-serif; fill: #2C3E50; }
+        .box { fill: #FFFFFF; stroke-width: 2; filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.2)); }
+        .box-data { stroke: #3498DB; }
+        .box-impl { stroke: #E74C3C; }
+        .box-important { stroke: #27AE60; }
+        .section-header { font: bold 16px sans-serif; fill: #FFFFFF; }
+        .gradient-data { fill: url(#gradient-data); }
+        .gradient-impl { fill: url(#gradient-impl); }
+        .gradient-important { fill: url(#gradient-important); }
+    </style>
+    
+    <defs>
+        <!-- 背景グラデーション -->
+        <linearGradient id="background-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:#ECF0F1;stop-opacity:1"/>
+            <stop offset="100%" style="stop-color:#BDC3C7;stop-opacity:1"/>
+        </linearGradient>
+        
+        <!-- セクショングラデーション -->
+        <linearGradient id="gradient-data" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:#3498DB;stop-opacity:0.1"/>
+            <stop offset="100%" style="stop-color:#FFFFFF;stop-opacity:0.8"/>
+        </linearGradient>
+        <linearGradient id="gradient-impl" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:#E74C3C;stop-opacity:0.1"/>
+            <stop offset="100%" style="stop-color:#FFFFFF;stop-opacity:0.8"/>
+        </linearGradient>
+        <linearGradient id="gradient-important" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:#27AE60;stop-opacity:0.1"/>
+            <stop offset="100%" style="stop-color:#FFFFFF;stop-opacity:0.8"/>
+        </linearGradient>
+        
+        <!-- ドロップシャドウフィルター -->
+        <filter id="drop-shadow">
+            <feGaussianBlur in="SourceAlpha" stdDeviation="2"/>
+            <feOffset dx="2" dy="2"/>
+            <feComponentTransfer>
+                <feFuncA type="linear" slope="0.2"/>
+            </feComponentTransfer>
+            <feMerge>
+                <feMergeNode/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+    
+    <!-- 背景 -->
+    <rect width="800" height="800" fill="url(#background-gradient)"/>
+    
+    <text x="400" y="60" class="title" text-anchor="middle">クラウドサービスの暗号化ポイント</text>
+    
+    <!-- データの状態による分類 -->
+    <g transform="translate(50,120)">
+        <rect width="300" height="250" class="box box-data gradient-data" rx="10" filter="url(#drop-shadow)"/>
+        <rect x="0" y="0" width="300" height="40" fill="#3498DB" rx="10"/>
+        <text x="150" y="25" class="section-header" text-anchor="middle">データの状態による分類</text>
+        <text x="20" y="70" class="text">
+            <tspan x="20" dy="20" fill="#2980B9">1. 保存時の暗号化 (Data at Rest)</tspan>
+            <tspan x="40" dy="25">- データベース</tspan>
+            <tspan x="40" dy="25">- オブジェクトストレージ</tspan>
+            <tspan x="40" dy="25">- ブロックストレージ</tspan>
+            <tspan x="20" dy="35" fill="#2980B9">2. 通信時の暗号化 (Data in Transit)</tspan>
+            <tspan x="40" dy="25">- TLS/SSL</tspan>
+            <tspan x="40" dy="25">- VPN</tspan>
+        </text>
+    </g>
+    
+    <!-- 暗号化の実装場所による分類 -->
+    <g transform="translate(450,120)">
+        <rect width="300" height="250" class="box box-impl gradient-impl" rx="10" filter="url(#drop-shadow)"/>
+        <rect x="0" y="0" width="300" height="40" fill="#E74C3C" rx="10"/>
+        <text x="150" y="25" class="section-header" text-anchor="middle">実装場所による分類</text>
+        <text x="20" y="70" class="text">
+            <tspan x="20" dy="20" fill="#C0392B">1. クライアントサイド暗号化</tspan>
+            <tspan x="40" dy="25">- アプリケーション層</tspan>
+            <tspan x="40" dy="25">- クライアントライブラリ</tspan>
+            <tspan x="20" dy="35" fill="#C0392B">2. サーバーサイド暗号化</tspan>
+            <tspan x="40" dy="25">- KMSによる管理</tspan>
+            <tspan x="40" dy="25">- HSMの利用</tspan>
+        </text>
+    </g>
+    
+    <!-- 下部の補足情報 -->
+    <g transform="translate(50,420)">
+        <rect width="700" height="300" class="box box-important gradient-important" rx="10" filter="url(#drop-shadow)"/>
+        <rect x="0" y="0" width="700" height="40" fill="#27AE60" rx="10"/>
+        <text x="350" y="25" class="section-header" text-anchor="middle">重要な考慮点</text>
+        <text x="20" y="70" class="text">
+            <tspan x="20" dy="20" fill="#27AE60">1. 鍵管理</tspan>
+            <tspan x="40" dy="25">- 暗号鍵のローテーション</tspan>
+            <tspan x="40" dy="25">- アクセス制御</tspan>
+            <tspan x="40" dy="25">- バックアップと復旧</tspan>
+            <tspan x="20" dy="35" fill="#27AE60">2. コンプライアンス要件</tspan>
+            <tspan x="40" dy="25">- データ保護規制への準拠</tspan>
+            <tspan x="40" dy="25">- 監査ログの保持</tspan>
+        </text>
+    </g>
+</svg> 

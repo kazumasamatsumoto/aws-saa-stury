@@ -1,0 +1,44 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+    <!-- 背景 -->
+    <rect width="800" height="600" fill="#f0f9ff"/>
+    
+    <!-- グリッドパターン -->
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+        <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#000" stroke-opacity="0.1"/>
+    </pattern>
+    <rect width="800" height="600" fill="url(#grid)"/>
+
+    <!-- L7 ファイアウォール -->
+    <g transform="translate(200,50)">
+        <rect width="400" height="100" fill="#ffffff" stroke="#2c5282" stroke-width="2"/>
+        <text x="200" y="45" text-anchor="middle" font-family="Arial" fill="#4a5568">L7 ファイアウォール</text>
+        <text x="200" y="65" text-anchor="middle" font-family="Arial" fill="#4a5568">(AWS WAF)</text>
+    </g>
+
+    <!-- NGFW -->
+    <g transform="translate(200,200)">
+        <rect width="400" height="100" fill="#ffffff" stroke="#2c5282" stroke-width="2"/>
+        <text x="200" y="45" text-anchor="middle" font-family="Arial" fill="#4a5568">次世代ファイアウォール</text>
+        <text x="200" y="65" text-anchor="middle" font-family="Arial" fill="#4a5568">(AWS Network Firewall)</text>
+    </g>
+
+    <!-- L3/L4 ファイアウォール -->
+    <g transform="translate(200,350)">
+        <rect width="400" height="100" fill="#ffffff" stroke="#2c5282" stroke-width="2"/>
+        <text x="200" y="45" text-anchor="middle" font-family="Arial" fill="#4a5568">L3/L4 ファイアウォール</text>
+        <text x="200" y="65" text-anchor="middle" font-family="Arial" fill="#4a5568">(Security Groups, NACLs)</text>
+    </g>
+
+    <!-- 接続線 -->
+    <g stroke="#3182ce" stroke-width="2" fill="none">
+        <path d="M 400,150 L 400,200" marker-end="url(#arrowhead)"/>
+        <path d="M 400,300 L 400,350" marker-end="url(#arrowhead)"/>
+    </g>
+
+    <!-- 矢印マーカー -->
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#3182ce"/>
+        </marker>
+    </defs>
+</svg> 

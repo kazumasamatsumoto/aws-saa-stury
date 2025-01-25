@@ -1,0 +1,111 @@
+<svg width="800" height="900" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景とグリッド -->
+  <rect width="800" height="900" fill="#f0f9ff"/>
+  <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+    <path d="M 20 0 L 0 0 0 20" fill="none" stroke="black" stroke-width="0.1"/>
+  </pattern>
+  <rect width="800" height="900" fill="url(#grid)"/>
+
+  <!-- 通常アクセスグループ -->
+  <g transform="translate(50,30)">
+    <rect width="250" height="210" fill="#f1f8e9" stroke="#2e7d32" stroke-width="2" stroke-dasharray="5,5" filter="drop-shadow(2px 2px 4px rgba(0,0,0,0.1))"/>
+    <text x="125" y="30" text-anchor="middle" font-family="Arial" font-size="16" fill="#2e7d32">Normal Traffic</text>
+    
+    <!-- 正常トラフィック -->
+    <g transform="translate(50,50)">
+      <rect width="150" height="60" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2" filter="drop-shadow(2px 2px 4px rgba(0,0,0,0.1))"/>
+      <text x="75" y="35" text-anchor="middle" font-family="Arial" font-size="14">Normal Access</text>
+    </g>
+
+    <g transform="translate(50,120)">
+      <rect width="150" height="60" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2" filter="drop-shadow(2px 2px 4px rgba(0,0,0,0.1))"/>
+      <text x="75" y="35" text-anchor="middle" font-family="Arial" font-size="14">API Requests</text>
+    </g>
+  </g>
+
+  <!-- 攻撃アクセスグループ -->
+  <g transform="translate(500,30)">
+    <rect width="250" height="290" fill="#ffebee" stroke="#c62828" stroke-width="2" stroke-dasharray="5,5" filter="drop-shadow(2px 2px 4px rgba(0,0,0,0.1))"/>
+    <text x="125" y="30" text-anchor="middle" font-family="Arial" font-size="16" fill="#c62828">Attack Traffic</text>
+    
+    <!-- 悪意のあるトラフィック -->
+    <g transform="translate(50,50)">
+      <rect width="150" height="60" fill="#ffebee" stroke="#c62828" stroke-width="2" filter="drop-shadow(2px 2px 4px rgba(0,0,0,0.1))"/>
+      <text x="75" y="35" text-anchor="middle" font-family="Arial" font-size="14">SQL Injection</text>
+    </g>
+
+    <g transform="translate(50,120)">
+      <rect width="150" height="60" fill="#ffebee" stroke="#c62828" stroke-width="2" filter="drop-shadow(2px 2px 4px rgba(0,0,0,0.1))"/>
+      <text x="75" y="35" text-anchor="middle" font-family="Arial" font-size="14">DDoS Attack</text>
+    </g>
+
+    <g transform="translate(50,190)">
+      <rect width="150" height="60" fill="#ffebee" stroke="#c62828" stroke-width="2" filter="drop-shadow(2px 2px 4px rgba(0,0,0,0.1))"/>
+      <text x="75" y="35" text-anchor="middle" font-family="Arial" font-size="14">XSS Attack</text>
+    </g>
+  </g>
+
+  <!-- AWS WAF -->
+  <g transform="translate(310,350)">
+    <rect width="180" height="80" fill="#ffffff" stroke="#2c5282" stroke-width="2" filter="drop-shadow(2px 2px 4px rgba(0,0,0,0.1))"/>
+    <text x="90" y="45" text-anchor="middle" font-family="Arial" font-size="16">AWS WAF</text>
+  </g>
+
+  <!-- AWSリソースグループ -->
+  <g transform="translate(50,600)">
+    <rect width="700" height="120" fill="#f5f8fa" stroke="#2c5282" stroke-width="2" stroke-dasharray="5,5" filter="drop-shadow(2px 2px 4px rgba(0,0,0,0.1))"/>
+    <text x="350" y="30" text-anchor="middle" font-family="Arial" font-size="16" fill="#2c5282">AWS Resources</text>
+    
+    <!-- Protected Resources -->
+    <g transform="translate(50,50)">
+      <rect width="150" height="60" fill="#ffffff" stroke="#2c5282" stroke-width="2" filter="drop-shadow(2px 2px 4px rgba(0,0,0,0.1))"/>
+      <text x="75" y="35" text-anchor="middle" font-family="Arial" font-size="14">CloudFront</text>
+    </g>
+
+    <g transform="translate(275,50)">
+      <rect width="150" height="60" fill="#ffffff" stroke="#2c5282" stroke-width="2" filter="drop-shadow(2px 2px 4px rgba(0,0,0,0.1))"/>
+      <text x="75" y="35" text-anchor="middle" font-family="Arial" font-size="14">ALB</text>
+    </g>
+
+    <g transform="translate(500,50)">
+      <rect width="150" height="60" fill="#ffffff" stroke="#2c5282" stroke-width="2" filter="drop-shadow(2px 2px 4px rgba(0,0,0,0.1))"/>
+      <text x="75" y="35" text-anchor="middle" font-family="Arial" font-size="14">API Gateway</text>
+    </g>
+  </g>
+
+  <!-- 接続線 -->
+  <g stroke="#3182ce" stroke-width="2" fill="none" stroke-linejoin="round">
+    <!-- 攻撃トラフィックの接続（ブロック） -->
+    <g stroke="#c62828" stroke-dasharray="5,5">
+      <path d="M 625,320 L 625,390 L 490,390" marker-end="url(#blockarrow)"/>
+    </g>
+    
+    <!-- 正常トラフィックの接続 -->
+    <g stroke="#2e7d32">
+      <path d="M 175,240 L 175,390 L 310,390" marker-end="url(#greenarrow)"/>
+    </g>
+
+    <!-- WAFからAWSリソースへの接続 -->
+    <g stroke="#2e7d32">
+      <path d="M 400,430 L 400,600" marker-end="url(#greenarrow)"/>
+    </g>
+  </g>
+
+  <!-- 矢印マーカー -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#3182ce"/>
+    </marker>
+    <marker id="blockarrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#c62828"/>
+    </marker>
+    <marker id="greenarrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2e7d32"/>
+    </marker>
+  </defs>
+
+  <!-- 説明テキスト -->
+  <g font-family="Arial" font-size="12" fill="#4a5568">
+    <text x="400" y="380">Web Traffic Protection</text>
+  </g>
+</svg> 

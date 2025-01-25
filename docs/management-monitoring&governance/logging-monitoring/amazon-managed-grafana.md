@@ -4,7 +4,7 @@
 
 Amazon Managed Service for Grafana（AMG）は、オープンソースの Grafana を AWS のマネージドサービスとして提供し、複数のデータソースからの統合監視を実現するサービスです。
 
-![AMG シナリオ](/image/logging-monitoring/amg-scenario.svg)
+![AMG シナリオ](/image/management-monitoring&governance/logging-monitoring/amg-scenario.svg)
 
 ## 解決する課題
 
@@ -27,7 +27,7 @@ Amazon Managed Service for Grafana（AMG）は、オープンソースの Grafan
 
 ## アーキテクチャ
 
-![AMG アーキテクチャ](/image/logging-monitoring/amg-architecture.svg)
+![AMG アーキテクチャ](/image/management-monitoring&governance/logging-monitoring/amg-architecture.svg)
 
 ## 主な機能
 

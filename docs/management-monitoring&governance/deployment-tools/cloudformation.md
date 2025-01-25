@@ -28,7 +28,7 @@
 
 ## AWS Serverless Application Repository
 
-![AWS_Serverless_Application_Repository](/image/deployment-tools/aws-sar-overview.svg)
+![AWS_Serverless_Application_Repository](/image/management-monitoring&governance/deployment-tools/aws-sar-overview.svg)
 
 1. 基本概念と特徴
    AWS Serverless Application Repository は、サーバーレスアプリケーションのための管理されたリポジトリサービスです。このサービスの中核となるのは、AWS SAM（Serverless Application Model）テンプレートを使用したアプリケーションの定義です。これにより、アプリケーションの構造やリソースを明確に記述することができます。

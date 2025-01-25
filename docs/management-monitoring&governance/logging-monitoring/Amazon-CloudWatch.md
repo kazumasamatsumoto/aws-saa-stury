@@ -6,7 +6,7 @@
 - 複数システムの統合監視という課題を解決しています
 - カスタマイズ可能な監視基盤を提供しています
 
-![CloudWatchが生まれた背景](/image/logging-monitoring/cloudwatch-background.svg)
+![CloudWatchが生まれた背景](/image/management-monitoring&governance/logging-monitoring/cloudwatch-background.svg)
 
 2. **利用手順**:
 
@@ -14,7 +14,7 @@
 - IAM ロールの設定から始まり、実際の監視設定まで順を追って進められます
 - 設定のポイントを押さえることで、効果的な監視が実現できます
 
-![CloudWatch利用手順](/image/logging-monitoring/cloudwatch-setup.svg)
+![CloudWatch利用手順](/image/management-monitoring&governance/logging-monitoring/cloudwatch-setup.svg)
 
 3. **仕組み**:
 
@@ -22,7 +22,7 @@
 - 各段階で必要な機能が統合されています
 - 柔軟なカスタマイズと自動化が可能です
 
-![CloudWatchの仕組み](/image/logging-monitoring/cloudwatch-architecture.svg)
+![CloudWatchの仕組み](/image/management-monitoring&governance/logging-monitoring/cloudwatch-architecture.svg)
 
 4. **主要コンポーネント**:
 
@@ -32,7 +32,7 @@
 - カスタムメトリクスの作成が可能
 - 統計情報の表示（平均、最大、最小、合計、パーセンタイル）
 
-![CloudWatch Metrics](/image/logging-monitoring/cloudwatch-metrics.svg)
+![CloudWatch Metrics](/image/management-monitoring&governance/logging-monitoring/cloudwatch-metrics.svg)
 
 ## CloudWatch Logs
 
@@ -40,7 +40,7 @@
 - ログの保持期間設定（1 日～ 10 年、または無制限）
 - ログパターンの検索とフィルタリング
 
-![CloudWatch Logs](/image/logging-monitoring/cloudwatch-logs.svg)
+![CloudWatch Logs](/image/management-monitoring&governance/logging-monitoring/cloudwatch-logs.svg)
 
 ## CloudWatch Alarms
 
@@ -48,7 +48,7 @@
 - 複数条件の組み合わせが可能
 - SNS 通知や Auto Scaling などのアクションと連携
 
-![CloudWatch Alarms](/image/logging-monitoring/cloudwatch-alarms.svg)
+![CloudWatch Alarms](/image/management-monitoring&governance/logging-monitoring/cloudwatch-alarms.svg)
 
 ## CloudWatch Events/EventBridge
 
@@ -56,11 +56,11 @@
 - スケジュール実行
 - サービス間連携の orchestration
 
-![CloudWatch Events](/image/logging-monitoring/cloudwatch-events.svg)
+![CloudWatch Events](/image/management-monitoring&governance/logging-monitoring/cloudwatch-events.svg)
 
 5. **ベストプラクティス**:
 
-![CloudWatch ベストプラクティス](/image/logging-monitoring/cloudwatch-best-practices.svg)
+![CloudWatch ベストプラクティス](/image/management-monitoring&governance/logging-monitoring/cloudwatch-best-practices.svg)
 
 ## 監視設計
 
@@ -82,7 +82,7 @@
 
 6. **SAA 試験のポイント**:
 
-![CloudWatch SAA試験ポイント](/image/logging-monitoring/cloudwatch-saa-points.svg)
+![CloudWatch SAA試験ポイント](/image/management-monitoring&governance/logging-monitoring/cloudwatch-saa-points.svg)
 
 ## 重要な概念
 
@@ -106,6 +106,6 @@
 
 7. **料金体系**:
 
-![CloudWatch 料金体系](/image/logging-monitoring/cloudwatch-pricing.svg)
+![CloudWatch 料金体系](/image/management-monitoring&governance/logging-monitoring/cloudwatch-pricing.svg)
 
 - メトリクス収集・保存

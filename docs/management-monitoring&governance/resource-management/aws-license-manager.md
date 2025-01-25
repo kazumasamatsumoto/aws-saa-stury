@@ -4,7 +4,7 @@
 
 AWS License Manager は、ソフトウェアライセンスを AWS とオンプレミス環境で一元的に管理し、コンプライアンスを維持しながらコストを最適化するためのサービスです。
 
-![License Manager 概要](/image/resource-management/license-manager-overview.svg)
+![License Manager 概要](/image/management-monitoring&governance/resource-management/license-manager-overview.svg)
 
 ## 解決する課題
 
@@ -27,7 +27,7 @@ AWS License Manager は、ソフトウェアライセンスを AWS とオンプ�
 
 ## 主な機能
 
-![License Manager ワークフロー](/image/resource-management/license-manager-workflow.svg)
+![License Manager ワークフロー](/image/management-monitoring&governance/resource-management/license-manager-workflow.svg)
 
 1. **ライセンス管理**
 

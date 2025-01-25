@@ -20,35 +20,35 @@ AWS Organizations の主要な目的は、一つの会社・組織が持つ複�
 
 全体像はこんな感じ
 
-![AWS-Organizations](/image/multi-account/aws-organizations-core.svg)
+![AWS-Organizations](/image/management-monitoring&governance/multi-account/aws-organizations-core.svg)
 
 ## SCP
 
-![SCP](/image/multi-account/scp-overview.svg)
+![SCP](/image/management-monitoring&governance/multi-account/scp-overview.svg)
 
 ## 一括請求管理
 
-![Consolidated-Billing](/image/multi-account/consolidated-billing.svg)
+![Consolidated-Billing](/image/management-monitoring&governance/multi-account/consolidated-billing.svg)
 
 ## CloudFormation StackSets
 
-![CloudFormation-StackSets](/image/multi-account/stacksets-overview.svg)
+![CloudFormation-StackSets](/image/management-monitoring&governance/multi-account/stacksets-overview.svg)
 
 ## CloudTrail
 
-![CloudTrail](/image/multi-account/cloudtrail-integration.svg)
+![CloudTrail](/image/management-monitoring&governance/multi-account/cloudtrail-integration.svg)
 
 ## Organization API
 
-![Organization-API](/image/multi-account/organization-api.svg)
+![Organization-API](/image/management-monitoring&governance/multi-account/organization-api.svg)
 
 ## AWS Control Tower Core Services
 
-![AWSControlTowerCoreServices](/image/multi-account/landing-zone-core.svg)
+![AWSControlTowerCoreServices](/image/management-monitoring&governance/multi-account/landing-zone-core.svg)
 
 ## Landing Zone
 
-![LandingZone](/image/multi-account/landing-zone-accounts.svg)
+![LandingZone](/image/management-monitoring&governance/multi-account/landing-zone-accounts.svg)
 
 ## Landing Zone とは
 
@@ -86,13 +86,13 @@ AWS Organizations の主要な目的は、一つの会社・組織が持つ複�
 
 このように、「Landing Zone」という名称には、「安全」「標準化」「管理」という重要な概念が含まれており、クラウド環境の基盤としての役割を象徴的に表現しています。
 
-![AboutLandingZone](/image/multi-account/landing-zone-concept.svg)
+![AboutLandingZone](/image/management-monitoring&governance/multi-account/landing-zone-concept.svg)
 
 ## Service-catalog
 
 組織のブレをなくすことができます！
 
-![service-catalog](/image/multi-account/service-catalog-problems-solutions.svg)
+![service-catalog](/image/management-monitoring&governance/multi-account/service-catalog-problems-solutions.svg)
 
 ## AWS Resource Access Manager (RAM)
 
@@ -119,4 +119,4 @@ AWS RAM の本質的な価値は「リソースの効率的な共有と管理の
 
 リソースの再利用性を高めることで、組織全体としての AWS 環境をより効率的に運用できるようになります。
 
-![aws-ram](/image/multi-account/aws-ram-diagram.svg)
+![aws-ram](/image/management-monitoring&governance/multi-account/aws-ram-diagram.svg)

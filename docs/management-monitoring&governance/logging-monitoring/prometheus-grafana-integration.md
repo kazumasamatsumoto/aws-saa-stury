@@ -4,7 +4,7 @@
 
 Prometheus と Grafana の連携により、EC2 インスタンスなどのメトリクスを収集し、効果的に可視化することができます。Amazon Managed Service for Prometheus と Amazon Managed Grafana を使用することで、運用負荷を軽減しながらこれらの機能を活用できます。
 
-![Prometheus Grafana 連携](/image/logging-monitoring/prometheus-grafana-integration.svg)
+![Prometheus Grafana 連携](/image/management-monitoring&governance/logging-monitoring/prometheus-grafana-integration.svg)
 
 ## 解決する課題
 

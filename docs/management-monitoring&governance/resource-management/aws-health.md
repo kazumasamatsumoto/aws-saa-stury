@@ -4,7 +4,7 @@
 
 AWS Health は、AWS リソースのパフォーマンス変更や障害情報をリアルタイムで提供し、運用の透明性と迅速な対応を実現するサービスです。
 
-![AWS Health 概要](/image/resource-management/aws-health-overview.svg)
+![AWS Health 概要](/image/management-monitoring&governance/resource-management/aws-health-overview.svg)
 
 ## 解決する課題
 
@@ -27,7 +27,7 @@ AWS Health は、AWS リソースのパフォーマンス変更や障害情報�
 
 ## 主な機能
 
-![AWS Health 通知フロー](/image/resource-management/aws-health-notification.svg)
+![AWS Health 通知フロー](/image/management-monitoring&governance/resource-management/aws-health-notification.svg)
 
 1. **Personal Health Dashboard**
 

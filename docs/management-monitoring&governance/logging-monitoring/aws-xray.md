@@ -4,7 +4,7 @@
 
 AWS X-Ray は、アプリケーションの分散トレースを実現し、パフォーマンスの問題やエラーの原因を特定するためのサービスです。
 
-![X-Ray シナリオ](/image/logging-monitoring/xray-scenario.svg)
+![X-Ray シナリオ](/image/management-monitoring&governance/logging-monitoring/xray-scenario.svg)
 
 ## 解決する課題
 
@@ -21,7 +21,7 @@ AWS X-Ray は、アプリケーションの分散トレースを実現し、パ�
 
 ## 仕組み
 
-![X-Ray アーキテクチャ](/image/logging-monitoring/xray-architecture.svg)
+![X-Ray アーキテクチャ](/image/management-monitoring&governance/logging-monitoring/xray-architecture.svg)
 
 ### 主要コンポーネント
 
@@ -70,7 +70,7 @@ AWS X-Ray は、アプリケーションの分散トレースを実現し、パ�
 
 ## 実装例
 
-![X-Ray 実装例](/image/logging-monitoring/xray-implementation.svg)
+![X-Ray 実装例](/image/management-monitoring&governance/logging-monitoring/xray-implementation.svg)
 
 ### コード例
 

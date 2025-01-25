@@ -6,13 +6,13 @@
 - 設定変更の履歴管理とコンプライアンス評価を実施
 - セキュリティとガバナンスの強化を支援
 
-![AWS Config Overview](/image/logging-monitoring/config-overview.svg)
+![AWS Config Overview](/image/management-monitoring&governance/logging-monitoring/config-overview.svg)
 
 ## Config ルール
 
 設定可能なルールのタイプと評価方法：
 
-![AWS Config Rules](/image/logging-monitoring/config-rules.svg)
+![AWS Config Rules](/image/management-monitoring&governance/logging-monitoring/config-rules.svg)
 
 ### AWS Managed Rules
 
@@ -59,7 +59,7 @@
 
 ## 料金体系
 
-![AWS Config 料金体系](/image/logging-monitoring/config-pricing.svg)
+![AWS Config 料金体系](/image/management-monitoring&governance/logging-monitoring/config-pricing.svg)
 
 課金の基準となる要素：
 
@@ -69,7 +69,7 @@
 
 ## 問題解決シナリオ
 
-![AWS Config 問題解決シナリオ](/image/logging-monitoring/config-scenario.svg)
+![AWS Config 問題解決シナリオ](/image/management-monitoring&governance/logging-monitoring/config-scenario.svg)
 
 ## ベストプラクティス
 

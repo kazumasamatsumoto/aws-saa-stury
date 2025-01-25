@@ -4,7 +4,7 @@
 
 AWS Well-Architected Framework は、クラウドアーキテクトがアプリケーションやワークロードを構築する際の意思決定を支援するフレームワークです。
 
-![Well-Architected Framework 概要](/image/resource-management/well-architected-overview.svg)
+![Well-Architected Framework 概要](/image/management-monitoring&governance/resource-management/well-architected-overview.svg)
 
 ## フレームワークの柱
 
@@ -45,7 +45,7 @@ AWS Well-Architected Framework は、クラウドアーキテクトがアプリ�
 
 ## 評価プロセス
 
-![Well-Architected 評価プロセス](/image/resource-management/well-architected-process.svg)
+![Well-Architected 評価プロセス](/image/management-monitoring&governance/resource-management/well-architected-process.svg)
 
 1. **アーキテクチャ評価**
 

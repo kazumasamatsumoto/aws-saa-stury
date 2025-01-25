@@ -4,7 +4,7 @@
 
 AWS Systems Manager は、AWS およびオンプレミスのインフラストラクチャを統合的に管理するためのサービスです。運用の自動化、構成管理、アプリケーション管理など、包括的な機能を提供します。
 
-![Systems Manager 概要](/image/resource-management/ssm-overview.svg)
+![Systems Manager 概要](/image/management-monitoring&governance/resource-management/ssm-overview.svg)
 
 ## 解決する課題
 
@@ -46,7 +46,7 @@ AWS Systems Manager は、AWS およびオンプレミスのインフラスト�
 
 ## 実装例
 
-![Systems Manager 自動化](/image/resource-management/ssm-automation.svg)
+![Systems Manager 自動化](/image/management-monitoring&governance/resource-management/ssm-automation.svg)
 
 ### OS/ソフトウェアの更新自動化
 

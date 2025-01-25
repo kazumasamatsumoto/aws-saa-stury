@@ -4,7 +4,7 @@
 
 Amazon Managed Service for Prometheus（AMP）は、オープンソースの Prometheus をマネージドサービスとして提供し、コンテナ化されたアプリケーションやインフラストラクチャの監視を実現するサービスです。
 
-![AMP シナリオ](/image/logging-monitoring/amp-scenario.svg)
+![AMP シナリオ](/image/management-monitoring&governance/logging-monitoring/amp-scenario.svg)
 
 ## 解決する課題
 
@@ -27,7 +27,7 @@ Amazon Managed Service for Prometheus（AMP）は、オープンソースの Pro
 
 ## アーキテクチャ
 
-![AMP アーキテクチャ](/image/logging-monitoring/amp-architecture.svg)
+![AMP アーキテクチャ](/image/management-monitoring&governance/logging-monitoring/amp-architecture.svg)
 
 ## 主な機能
 

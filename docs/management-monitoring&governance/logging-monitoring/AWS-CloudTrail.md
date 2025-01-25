@@ -6,13 +6,13 @@
 - ユーザーアクティビティや API 操作を証跡（Trail）として記録
 - アカウントのセキュリティと運用の最適化を支援
 
-![CloudTrail Overview](/image/logging-monitoring/cloudtrail-overview.svg)
+![CloudTrail Overview](/image/management-monitoring&governance/logging-monitoring/cloudtrail-overview.svg)
 
 ## イベントタイプ
 
 CloudTrail で記録される 3 種類のイベント：
 
-![CloudTrail Events](/image/logging-monitoring/cloudtrail-events.svg)
+![CloudTrail Events](/image/management-monitoring&governance/logging-monitoring/cloudtrail-events.svg)
 
 ### 管理イベント
 

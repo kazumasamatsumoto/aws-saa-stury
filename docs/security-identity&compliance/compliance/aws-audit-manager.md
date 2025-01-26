@@ -29,7 +29,7 @@ AWS Audit Manager は、AWS リソースのコンプライアンス監査を自�
    - カスタマイズ可能なレポートフォーマット
    - エビデンス収集の自動化
 
-![AWS Audit Manager Setup Flow](/image/security-identity&compliance/compliance/fixed-svg.svg)
+![AWS Audit Manager Setup Flow](/image/security-identity&compliance/compliance/audit-manager-setup.svg)
 
 ## サポートされる主要フレームワーク
 

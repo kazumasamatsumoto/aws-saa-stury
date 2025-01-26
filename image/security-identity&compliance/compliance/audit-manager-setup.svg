@@ -1,78 +1,56 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
     <defs>
-        <style type="text/css">
-            .box { fill: #ffffff; stroke: #2c5282; stroke-width: 2; }
-            .text { font-family: Arial, sans-serif; font-size: 14px; fill: #2d3748; }
-            .arrow { stroke: #3182ce; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
-            .step-box { fill: #ffffff; stroke: #2c5282; stroke-width: 2; rx: 5; }
-            .data-box { fill: #e6f3ff; stroke: #3182ce; stroke-width: 1; rx: 3; }
-        </style>
         <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
             <polygon points="0 0, 10 3.5, 0 7" fill="#3182ce"/>
         </marker>
     </defs>
 
     <rect width="100%" height="100%" fill="#f0f9ff"/>
-    
-    <text x="400" y="40" text-anchor="middle" fill="#2c5282" font-size="24" font-weight="bold">AWS Audit Manager セットアップフロー</text>
+
+    <text x="400" y="60" text-anchor="middle" fill="#2c5282" font-family="Arial" font-size="32" font-weight="bold">AWS Audit Manager セットアップフロー</text>
 
     <!-- Step 1 -->
-    <g transform="translate(50,80)">
-        <rect width="200" height="250" class="step-box"/>
-        <text x="100" y="30" class="text" text-anchor="middle" font-weight="bold">Step 1: 初期設定</text>
-        
-        <g transform="translate(20,50)">
-            <circle cx="10" cy="10" r="5" fill="#3182ce"/>
-            <text x="30" y="15" class="text">Console有効化</text>
-            
-            <circle cx="10" cy="40" r="5" fill="#3182ce"/>
-            <text x="30" y="45" class="text">フレームワーク選択</text>
-            
-            <circle cx="10" cy="70" r="5" fill="#3182ce"/>
-            <text x="30" y="75" class="text">サービス連携設定</text>
-        </g>
-    </g>
+    <rect x="50" y="100" width="220" height="280" fill="white" stroke="#2c5282" stroke-width="2" rx="5"/>
+    <text x="160" y="140" text-anchor="middle" fill="#2c5282" font-family="Arial" font-size="20" font-weight="bold">Step 1: 初期設定</text>
+    
+    <circle cx="80" cy="190" r="6" fill="#3182ce"/>
+    <text x="105" y="195" fill="#4a5568" font-family="Arial" font-size="16">Console有効化</text>
+    
+    <circle cx="80" cy="230" r="6" fill="#3182ce"/>
+    <text x="105" y="235" fill="#4a5568" font-family="Arial" font-size="16">フレームワーク選択</text>
+    
+    <circle cx="80" cy="270" r="6" fill="#3182ce"/>
+    <text x="105" y="275" fill="#4a5568" font-family="Arial" font-size="16">サービス連携設定</text>
 
     <!-- Step 2 -->
-    <g transform="translate(300,80)">
-        <rect width="200" height="250" class="step-box"/>
-        <text x="100" y="30" class="text" text-anchor="middle" font-weight="bold">Step 2: データ収集</text>
-        
-        <g transform="translate(20,50)">
-            <rect width="160" height="30" class="data-box"/>
-            <text x="80" y="20" class="text" text-anchor="middle">CloudTrail Logs</text>
-            
-            <rect width="160" height="30" y="40" class="data-box"/>
-            <text x="80" y="60" class="text" text-anchor="middle">Security Hub Findings</text>
-            
-            <rect width="160" height="30" y="80" class="data-box"/>
-            <text x="80" y="100" class="text" text-anchor="middle">Config 設定</text>
+    <rect x="310" y="100" width="220" height="280" fill="white" stroke="#2c5282" stroke-width="2" rx="5"/>
+    <text x="420" y="140" text-anchor="middle" fill="#2c5282" font-family="Arial" font-size="20" font-weight="bold">Step 2: データ収集</text>
+    
+    <rect x="330" y="170" width="180" height="38" fill="#e6f3ff" stroke="#3182ce" stroke-width="1" rx="3"/>
+    <text x="420" y="195" text-anchor="middle" fill="#4a5568" font-family="Arial" font-size="14">CloudTrail Logs</text>
+    
+    <rect x="330" y="218" width="180" height="38" fill="#e6f3ff" stroke="#3182ce" stroke-width="1" rx="3"/>
+    <text x="420" y="243" text-anchor="middle" fill="#4a5568" font-family="Arial" font-size="14">Security Hub Findings</text>
+    
+    <rect x="330" y="266" width="180" height="38" fill="#e6f3ff" stroke="#3182ce" stroke-width="1" rx="3"/>
+    <text x="420" y="291" text-anchor="middle" fill="#4a5568" font-family="Arial" font-size="14">Config 設定</text>
 
-            <rect width="160" height="30" y="120" class="data-box"/>
-            <text x="80" y="140" class="text" text-anchor="middle">S3バケットポリシー・ACL</text>
-
-            <rect width="160" height="30" y="160" class="data-box"/>
-            <text x="80" y="180" class="text" text-anchor="middle">IAM Policies & Credentials</text>
-        </g>
-    </g>
+    <rect x="330" y="314" width="180" height="38" fill="#e6f3ff" stroke="#3182ce" stroke-width="1" rx="3"/>
+    <text x="420" y="339" text-anchor="middle" fill="#4a5568" font-family="Arial" font-size="14">S3バケットポリシー・ACL</text>
 
     <!-- Step 3 -->
-    <g transform="translate(550,80)">
-        <rect width="200" height="250" class="step-box"/>
-        <text x="100" y="30" class="text" text-anchor="middle" font-weight="bold">Step 3: 評価・レポート</text>
-        
-        <g transform="translate(20,50)">
-            <rect width="160" height="160" class="data-box"/>
-            <text x="80" y="40" class="text" text-anchor="middle" font-weight="bold">Audit Manager</text>
-            
-            <path d="M40,60 L120,60" stroke="#3182ce" stroke-width="1"/>
-            <text x="80" y="90" class="text" text-anchor="middle">データ分析</text>
-            <text x="80" y="120" class="text" text-anchor="middle">コンプライアンス評価</text>
-            <text x="80" y="150" class="text" text-anchor="middle">レポート生成</text>
-        </g>
-    </g>
+    <rect x="570" y="100" width="220" height="280" fill="white" stroke="#2c5282" stroke-width="2" rx="5"/>
+    <text x="680" y="140" text-anchor="middle" fill="#2c5282" font-family="Arial" font-size="20" font-weight="bold">Step 3: 評価・レポート</text>
+    
+    <rect x="590" y="170" width="180" height="180" fill="#e6f3ff" stroke="#3182ce" stroke-width="2" rx="5"/>
+    <text x="680" y="210" text-anchor="middle" fill="#2c5282" font-family="Arial" font-size="16" font-weight="bold">Audit Manager</text>
+    
+    <path d="M615,230 L745,230" stroke="#3182ce" stroke-width="1"/>
+    <text x="680" y="260" text-anchor="middle" fill="#4a5568" font-family="Arial" font-size="14">データ分析</text>
+    <text x="680" y="290" text-anchor="middle" fill="#4a5568" font-family="Arial" font-size="14">コンプライアンス評価</text>
+    <text x="680" y="320" text-anchor="middle" fill="#4a5568" font-family="Arial" font-size="14">レポート生成</text>
 
-    <!-- フロー接続 -->
-    <path d="M250,205 L300,205" class="arrow"/>
-    <path d="M500,205 L550,205" class="arrow"/>
+    <!-- Flow Connections -->
+    <path d="M270,240 L310,240" stroke="#3182ce" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <path d="M530,240 L570,240" stroke="#3182ce" stroke-width="2" marker-end="url(#arrowhead)"/>
 </svg>

@@ -183,3 +183,54 @@ D. S3 メタデータによる削除
 - [AWS Glue ジョブブックマークの概要](https://docs.aws.amazon.com/glue/latest/dg/monitor-continuations.html)
 - [AWS Glue の概要](https://docs.aws.amazon.com/glue/latest/dg/what-is-glue.html)
 </details>
+
+# S3 バケット間のデータ転送自動化とイベント駆動ワークフロー
+
+## 問題の特徴と要件
+
+### 現状の環境と要件
+
+- 毎日、市場データが元の S3 バケットにファイルとして保存される
+- 分析用の S3 バケットへ自動的にファイルを移動させる必要がある
+- AWS Glue によるデータ処理後、その結果を Amazon SageMaker Pipelines へ連携するワークフローが必要
+- 運用負荷を最小限に抑えた自動化構成が求められている
+
+## 正解
+
+C. S3 バケット間で S3 レプリケーションを設定します。分析用の S3 バケットに Amazon EventBridge（CloudWatch Events）へのイベント通知を送信するよう設定し、ObjectCreated ルールを設定します。ルールのターゲットとして Glue ジョブと SageMaker Pipelines を設定します。
+
+## 解説
+
+### なぜ選択肢 C が正解なのか
+
+1. **S3 レプリケーションの利用**
+
+   - **自動ファイルコピー**: 元の S3 バケットにファイルが追加されると、S3 レプリケーションによって自動的に分析用 S3 バケットへコピーされ、Lambda 関数などの追加コードが不要になります。
+   - **運用負荷の低減**: AWS 管理の仕組みを利用するため、独自のスクリプトや関数の管理が不要です。
+
+2. **イベント通知と自動ワークフロー**
+   - 分析用の S3 バケットでは、ObjectCreated イベントが発生した際に Amazon EventBridge へ通知が送信されます。
+   - EventBridge のルールにより、このイベントをトリガーとして AWS Glue ジョブが自動的に起動し、その処理結果が Amazon SageMaker Pipelines に連携されます。
+
+### フローの概要
+
+1. **データ投稿**: 市場データが元の S3 バケットに保存される
+2. **S3 レプリケーション**: 新しいファイルが元のバケットに追加されると、自動的に分析用の S3 バケットへコピーされる
+3. **イベント通知**: 分析用 S3 バケットにファイルが追加されると、ObjectCreated イベントが発生し、EventBridge に通知される
+4. **ワークフロー連携**: EventBridge ルールにより、AWS Glue ジョブが自動起動され、処理結果が Amazon SageMaker Pipelines へ送信される
+
+### 他の選択肢が不適切な理由
+
+- **選択肢 A および B**:
+
+  - Lambda 関数を使用してファイルコピーを行う場合、追加のコード管理が必要となり、運用負荷が増加します。
+
+- **選択肢 D**:
+  - SageMaker Pipelines の自動起動は実現するものの、Glue の処理を手動で管理（Glue クローラーの実行）が必要となるため、フロー全体として自動化の恩恵が減少します。
+
+## 参考資料
+
+- [Amazon S3 イベント通知の概要](https://docs.aws.amazon.com/AmazonS3/latest/userguide/EventNotifications.html)
+- [AWS Glue の接続とジョブの設定](https://docs.aws.amazon.com/glue/latest/dg/glue-connections.html)
+- [Amazon S3 レプリケーション](https://docs.aws.amazon.com/AmazonS3/latest/userguide/replication.html)
+- [Amazon EventBridge の概要](https://aws.amazon.com/eventbridge/)
